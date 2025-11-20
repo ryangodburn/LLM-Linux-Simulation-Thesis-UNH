@@ -1,0 +1,94 @@
+Test Type,Step,Command,Context Size,Degraded,Elapsed Time (s),Timestamp
+Long Command Chain,1,cd /tmp,7,NO,1.09,2025-11-13T20:27:05.019291
+Long Command Chain,2,mkdir test_dir,9,NO,1.3,2025-11-13T20:27:06.315412
+Long Command Chain,3,cd test_dir,11,NO,1.47,2025-11-13T20:27:07.783462
+Long Command Chain,4,touch file1.txt file2.txt file3.txt,13,NO,1.57,2025-11-13T20:27:09.357322
+Long Command Chain,5,echo 'data1' > file1.txt,15,NO,1.62,2025-11-13T20:27:10.973554
+Long Command Chain,6,echo 'data2' > file2.txt,17,NO,1.7,2025-11-13T20:27:12.678033
+Long Command Chain,7,echo 'data3' > file3.txt,19,NO,1.86,2025-11-13T20:27:14.540935
+Long Command Chain,8,cat file1.txt,21,NO,2.03,2025-11-13T20:27:16.573174
+Long Command Chain,9,cat file2.txt,23,NO,2.24,2025-11-13T20:27:18.809198
+Long Command Chain,10,cat file3.txt,25,NO,2.39,2025-11-13T20:27:21.201730
+Long Command Chain,11,ls -la,27,NO,8.93,2025-11-13T20:27:30.133306
+Long Command Chain,12,cd ..,29,NO,2.75,2025-11-13T20:27:32.882343
+Long Command Chain,13,ls -la test_dir,31,NO,9.02,2025-11-13T20:27:41.905196
+Long Command Chain,14,rm -rf test_dir,33,NO,3.24,2025-11-13T20:27:45.145246
+Long Command Chain,15,ls -la,35,NO,16.61,2025-11-13T20:28:01.752540
+Long Command Chain,16,mkdir test_dir2,37,NO,4.15,2025-11-13T20:28:05.899472
+Long Command Chain,17,cd test_dir2,39,NO,4.23,2025-11-13T20:28:10.126102
+Long Command Chain,18,for i in {1..10}; do touch file_$i.txt; done,41,NO,4.83,2025-11-13T20:28:14.958172
+Long Command Chain,19,ls -la,43,NO,21.53,2025-11-13T20:28:36.487722
+Long Command Chain,20,cd ..,45,NO,5.86,2025-11-13T20:28:42.352490
+Long Command Chain,21,rm -rf test_dir2,47,NO,5.96,2025-11-13T20:28:48.316140
+Long Command Chain,22,echo 'What was in file1.txt?',49,NO,6.98,2025-11-13T20:28:55.295649
+Long Command Chain,23,ls /tmp/test_dir,51,NO,8.01,2025-11-13T20:29:03.303503
+Recursive Operations,1,mkdir -p /tmp/deep/nested/directory/structure/level5,7,NO,1.13,2025-11-13T20:29:04.433853
+Recursive Operations,2,cd /tmp/deep/nested/directory/structure/level5,9,NO,1.92,2025-11-13T20:29:06.357257
+Recursive Operations,3,pwd,11,NO,2.65,2025-11-13T20:29:09.004167
+Recursive Operations,4,touch secret.txt,13,NO,2.05,2025-11-13T20:29:11.055041
+Recursive Operations,5,echo 'confidential' > secret.txt,15,NO,2.2,2025-11-13T20:29:13.253327
+Recursive Operations,6,cd /,17,NO,1.53,2025-11-13T20:29:14.788161
+Recursive Operations,7,find /tmp/deep -name '*.txt',19,NO,2.41,2025-11-13T20:29:17.199449
+Recursive Operations,8,cat /tmp/deep/nested/directory/structure/level5/secret.txt,21,NO,2.01,2025-11-13T20:29:19.206849
+Recursive Operations,9,cd /tmp/deep,23,NO,2.14,2025-11-13T20:29:21.343793
+Recursive Operations,10,ls -R,25,NO,4.21,2025-11-13T20:29:25.552592
+Recursive Operations,11,rm -rf /tmp/deep,27,NO,2.59,2025-11-13T20:29:28.144423
+Recursive Operations,12,ls /tmp/deep,29,NO,3.42,2025-11-13T20:29:31.566791
+Process Tracking,1,ps aux | head -5,7,NO,9.68,2025-11-13T20:29:41.245923
+Process Tracking,2,top -b -n 1 | head -10,9,NO,15.47,2025-11-13T20:29:56.720249
+Process Tracking,3,sleep 2 &,11,NO,2.05,2025-11-13T20:29:58.766804
+Process Tracking,4,ps aux | grep sleep,13,NO,5.69,2025-11-13T20:30:04.457185
+Process Tracking,5,kill %1,15,NO,2.13,2025-11-13T20:30:06.590351
+Process Tracking,6,ps aux | grep sleep,17,NO,3.65,2025-11-13T20:30:10.237632
+Process Tracking,7,jobs,19,NO,1.7,2025-11-13T20:30:11.941028
+Process Tracking,8,echo $?,21,NO,1.9,2025-11-13T20:30:13.846044
+Extreme Sequence,1,echo 'Step 1',7,NO,1.71,2025-11-13T21:06:50.467331
+Extreme Sequence,2,echo 'Step 2',9,NO,1.58,2025-11-13T21:06:52.048391
+Extreme Sequence,3,echo 'Step 3',11,NO,1.48,2025-11-13T21:06:53.528867
+Extreme Sequence,4,echo 'Step 4',13,NO,1.6,2025-11-13T21:06:55.130315
+Extreme Sequence,5,echo 'Step 5',15,NO,1.62,2025-11-13T21:06:56.749619
+Extreme Sequence,6,echo 'Step 6',17,NO,1.78,2025-11-13T21:06:58.526423
+Extreme Sequence,7,echo 'Step 7',19,NO,1.91,2025-11-13T21:07:00.434693
+Extreme Sequence,8,echo 'Step 8',21,NO,2.05,2025-11-13T21:07:02.481699
+Extreme Sequence,9,echo 'Step 9',23,NO,2.13,2025-11-13T21:07:04.611151
+Extreme Sequence,10,echo 'Step 10',25,NO,2.64,2025-11-13T21:07:07.254746
+Extreme Sequence,11,echo 'Step 11',27,NO,2.49,2025-11-13T21:07:09.746548
+Extreme Sequence,12,echo 'Step 12',29,NO,2.74,2025-11-13T21:07:12.488069
+Extreme Sequence,13,echo 'Step 13',31,NO,3.04,2025-11-13T21:07:15.529934
+Extreme Sequence,14,echo 'Step 14',33,NO,3.26,2025-11-13T21:07:18.786898
+Extreme Sequence,15,echo 'Step 15',35,NO,3.6,2025-11-13T21:07:22.388795
+Extreme Sequence,16,echo 'Step 16',37,NO,4,2025-11-13T21:07:26.391407
+Extreme Sequence,17,echo 'Step 17',39,NO,4.3,2025-11-13T21:07:30.688888
+Extreme Sequence,18,echo 'Step 18',41,NO,4.79,2025-11-13T21:07:35.474801
+Extreme Sequence,19,echo 'Step 19',43,NO,5.28,2025-11-13T21:07:40.757706
+Extreme Sequence,20,echo 'Step 20',45,NO,5.71,2025-11-13T21:07:46.463153
+Extreme Sequence,21,echo 'Step 21',47,NO,6.23,2025-11-13T21:07:52.688472
+Extreme Sequence,22,echo 'Step 22',49,NO,6.85,2025-11-13T21:07:59.543602
+Extreme Sequence,23,echo 'Step 23',51,NO,7.54,2025-11-13T21:08:07.083943
+Extreme Sequence,24,echo 'Step 24',53,NO,8.2,2025-11-13T21:08:15.289148
+Extreme Sequence,25,echo 'Step 25',55,NO,8.98,2025-11-13T21:08:24.266881
+Extreme Sequence,26,echo 'Step 26',57,NO,9.62,2025-11-13T21:08:33.888901
+Extreme Sequence,27,echo 'Step 27',59,NO,10.37,2025-11-13T21:08:44.255183
+Extreme Sequence,28,echo 'Step 28',61,NO,11.3,2025-11-13T21:08:55.554233
+Extreme Sequence,29,echo 'Step 29',63,NO,12.13,2025-11-13T21:09:07.683455
+Extreme Sequence,30,echo 'Step 30',65,NO,13.19,2025-11-13T21:09:20.876627
+Extreme Sequence,31,echo 'Step 31',67,NO,14.12,2025-11-13T21:09:34.997484
+Extreme Sequence,32,echo 'Step 32',69,NO,15.32,2025-11-13T21:09:50.313542
+Extreme Sequence,33,echo 'Step 33',71,NO,16.39,2025-11-13T21:10:06.699914
+Extreme Sequence,34,echo 'Step 34',73,NO,17.6,2025-11-13T21:10:24.302286
+Extreme Sequence,35,echo 'Step 35',75,NO,18.75,2025-11-13T21:10:43.053842
+Extreme Sequence,36,echo 'Step 36',77,NO,20.22,2025-11-13T21:11:03.271741
+Extreme Sequence,37,echo 'Step 37',79,NO,21.57,2025-11-13T21:11:24.837039
+Extreme Sequence,38,echo 'Step 38',81,NO,23.09,2025-11-13T21:11:47.923564
+Extreme Sequence,39,echo 'Step 39',83,NO,24.55,2025-11-13T21:12:12.476369
+Extreme Sequence,40,echo 'Step 40',85,NO,26.23,2025-11-13T21:12:38.705840
+Extreme Sequence,41,echo 'Step 41',87,NO,27.74,2025-11-13T21:13:06.444851
+Extreme Sequence,42,echo 'Step 42',89,NO,29.71,2025-11-13T21:13:36.150409
+Extreme Sequence,43,echo 'Step 43',91,NO,31.41,2025-11-13T21:14:07.562729
+Extreme Sequence,44,echo 'Step 44',93,NO,33.47,2025-11-13T21:14:41.035992
+Extreme Sequence,45,echo 'Step 45',95,NO,35.57,2025-11-13T21:15:16.610305
+Extreme Sequence,46,echo 'Step 46',97,NO,37.66,2025-11-13T21:15:54.269516
+Extreme Sequence,47,echo 'Step 47',99,NO,40.04,2025-11-13T21:16:34.310153
+Extreme Sequence,48,echo 'Step 48',101,NO,42.03,2025-11-13T21:17:16.340999
+Extreme Sequence,49,echo 'Step 49',103,NO,44.4,2025-11-13T21:18:00.737949
+Extreme Sequence,50,echo 'Step 50',105,NO,46.66,2025-11-13T21:18:47.400488

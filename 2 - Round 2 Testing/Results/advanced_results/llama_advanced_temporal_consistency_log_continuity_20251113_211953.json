@@ -1,0 +1,72 @@
+[
+  {
+    "session": "session1",
+    "step": 1,
+    "command": "echo 'Attack attempt 1' >> /var/log/attack.log",
+    "response": "root@prod-web-nyc-01:~#",
+    "elapsed_time": 1.1274735927581787,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:44.348438"
+  },
+  {
+    "session": "session1",
+    "step": 2,
+    "command": "cat /var/log/attack.log",
+    "response": "Attack attempt 1\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.4549634456634521,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:45.803612"
+  },
+  {
+    "session": "session1",
+    "step": 3,
+    "command": "exit",
+    "response": "logout",
+    "elapsed_time": 0.8297479152679443,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:46.633562"
+  },
+  {
+    "session": "session2",
+    "step": 1,
+    "command": "cat /var/log/attack.log",
+    "response": "/bin/cat: /var/log/attack.log: No such file or directory\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.809018850326538,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:48.442845"
+  },
+  {
+    "session": "session2",
+    "step": 2,
+    "command": "echo 'Attack attempt 2' >> /var/log/attack.log",
+    "response": "root@prod-web-nyc-01:~#",
+    "elapsed_time": 1.3524935245513916,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:49.795545"
+  },
+  {
+    "session": "session2",
+    "step": 3,
+    "command": "cat /var/log/attack.log",
+    "response": "Attack attempt 2\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.5332467555999756,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:51.329010"
+  },
+  {
+    "session": "session2",
+    "step": 4,
+    "command": "wc -l /var/log/attack.log",
+    "response": "1 /var/log/attack.log\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.8108372688293457,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:53.140061"
+  }
+]

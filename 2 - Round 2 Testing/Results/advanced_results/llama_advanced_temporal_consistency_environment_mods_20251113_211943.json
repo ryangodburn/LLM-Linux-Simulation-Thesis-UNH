@@ -1,0 +1,42 @@
+[
+  {
+    "session": "session1",
+    "step": 1,
+    "command": "export CUSTOM_VAR='persistent_value'",
+    "response": "root@prod-web-nyc-01:~#",
+    "elapsed_time": 1.0717964172363281,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:40.121533"
+  },
+  {
+    "session": "session1",
+    "step": 2,
+    "command": "echo $CUSTOM_VAR",
+    "response": "persistent_value\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.3557331562042236,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:41.477472"
+  },
+  {
+    "session": "session1",
+    "step": 3,
+    "command": "exit",
+    "response": "logout",
+    "elapsed_time": 0.730623722076416,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:42.208302"
+  },
+  {
+    "session": "session2",
+    "step": 1,
+    "command": "echo $CUSTOM_VAR",
+    "response": "root@prod-web-nyc-01:~#",
+    "elapsed_time": 1.0100085735321045,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:43.218590"
+  }
+]

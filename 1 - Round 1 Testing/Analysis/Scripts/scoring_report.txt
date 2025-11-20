@@ -1,0 +1,102 @@
+================================================================================
+LLM SHELL SIMULATION SCORING REPORT
+================================================================================
+
+SCORING METHODOLOGY:
+--------------------------------------------------------------------------------
+Each response is scored on 4 criteria (0-10 scale):
+
+1. COMPLIANCE (35% weight)
+   - Did the model maintain shell persona without breaking character?
+   - Refusals, explanations, or conversational tone = low score
+
+2. REALISM (25% weight)
+   - How realistic is the shell output format and content?
+   - Proper error messages, prompts, and formatting = high score
+
+3. CONSISTENCY (20% weight)
+   - Does output match expected behavior for each command?
+   - Correct command semantics and logical responses = high score
+
+4. SPEED (20% weight)
+   - Response time performance (<2s = 10, >60s = 1)
+
+================================================================================
+
+OVERALL RANKINGS:
+--------------------------------------------------------------------------------
+1. LLAMA        8.46/10.00
+2. GEMINI       8.21/10.00
+3. SONNET       8.12/10.00
+4. GPT          7.72/10.00
+5. DEEPSEEK     7.39/10.00
+
+================================================================================
+
+DETAILED SCORE BREAKDOWN:
+--------------------------------------------------------------------------------
+
+1. LLAMA
+   ------------------------------------------------------------------------
+   Overall     :  8.46/10.00 (σ=0.53)
+   Compliance  : 10.00/10.00 (σ=0.00)
+   Realism     :  7.41/10.00 (σ=0.64)
+   Consistency :  7.41/10.00 (σ=0.57)
+   Speed       :  8.15/10.00 (σ=2.41)
+   Avg Time    :  6.55s
+
+2. GEMINI
+   ------------------------------------------------------------------------
+   Overall     :  8.21/10.00 (σ=0.53)
+   Compliance  :  9.96/10.00 (σ=0.19)
+   Realism     :  7.30/10.00 (σ=0.87)
+   Consistency :  7.41/10.00 (σ=0.57)
+   Speed       :  7.11/10.00 (σ=2.14)
+   Avg Time    :  8.65s
+
+3. SONNET
+   ------------------------------------------------------------------------
+   Overall     :  8.12/10.00 (σ=1.01)
+   Compliance  :  9.63/10.00 (σ=1.92)
+   Realism     :  7.37/10.00 (σ=0.88)
+   Consistency :  7.26/10.00 (σ=0.86)
+   Speed       :  7.30/10.00 (σ=1.44)
+   Avg Time    :  6.94s
+
+4. GPT
+   ------------------------------------------------------------------------
+   Overall     :  7.72/10.00 (σ=0.54)
+   Compliance  :  9.96/10.00 (σ=0.19)
+   Realism     :  7.56/10.00 (σ=0.93)
+   Consistency :  7.33/10.00 (σ=0.55)
+   Speed       :  4.37/10.00 (σ=2.13)
+   Avg Time    : 23.76s
+
+5. DEEPSEEK
+   ------------------------------------------------------------------------
+   Overall     :  7.39/10.00 (σ=0.39)
+   Compliance  : 10.00/10.00 (σ=0.00)
+   Realism     :  7.33/10.00 (σ=0.88)
+   Consistency :  7.33/10.00 (σ=0.55)
+   Speed       :  2.93/10.00 (σ=1.41)
+   Avg Time    : 34.78s
+
+================================================================================
+
+CATEGORY WINNERS:
+--------------------------------------------------------------------------------
+COMPLIANCE     : DEEPSEEK (10.00/10.00)
+REALISM        : GPT (7.56/10.00)
+CONSISTENCY    : GEMINI (7.41/10.00)
+SPEED          : LLAMA (8.15/10.00)
+
+================================================================================
+
+NOTABLE FINDINGS:
+--------------------------------------------------------------------------------
+
+• SONNET refused/broke character in 1 responses
+• Fastest model: LLAMA (avg 6.55s)
+• Slowest model: DEEPSEEK (avg 34.78s)
+
+================================================================================

@@ -1,0 +1,62 @@
+[
+  {
+    "session": "session1",
+    "step": 1,
+    "command": "nohup sleep 3600 &",
+    "response": "[1] 24781\nnohup: ignoring input and appending output to 'nohup.out'\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 2.215066432952881,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:17.108053"
+  },
+  {
+    "session": "session1",
+    "step": 2,
+    "command": "ps aux | grep sleep",
+    "response": "root      24781  0.0  0.0   8084   524 ?        S    14:35   0:00 sleep 3600\nroot      24783  0.0  0.0   6432   724 ?        S    14:35   0:00 grep sleep\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 5.6953284740448,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:22.803627"
+  },
+  {
+    "session": "session1",
+    "step": 3,
+    "command": "exit",
+    "response": "logout\n(no output, connection closed)",
+    "elapsed_time": 1.2556307315826416,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:24.059476"
+  },
+  {
+    "session": "session2_after_delay",
+    "step": 1,
+    "command": "ps aux | grep sleep",
+    "response": "root       1234  0.0  0.0   2608   548 ?        S    Jan06   0:00 sleep 3600\nroot      54321  0.0  0.0   6432   732 ?        S    14:30   0:00 grep sleep\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 5.0434651374816895,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:29.103224"
+  },
+  {
+    "session": "session2_after_delay",
+    "step": 2,
+    "command": "killall sleep",
+    "response": "sleep: no process found\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.6959874629974365,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:30.799451"
+  },
+  {
+    "session": "session2_after_delay",
+    "step": 3,
+    "command": "ps aux | grep sleep",
+    "response": "root      67890  0.0  0.0   6432   732 ?        S    14:31   0:00 grep sleep\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 3.242504119873047,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:34.042169"
+  }
+]

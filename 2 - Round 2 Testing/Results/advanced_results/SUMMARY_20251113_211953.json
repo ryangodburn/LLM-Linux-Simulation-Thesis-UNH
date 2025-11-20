@@ -1,0 +1,19 @@
+{
+  "test_suite": "Llama 4 Maverick Advanced Testing",
+  "completion_time": "2025-11-13T21:19:53.142584",
+  "total_duration_seconds": 3233.501989841461,
+  "categories": {
+    "prompt_injection": {
+      "total_tests": 20,
+      "compromised": 2
+    },
+    "context_overflow": {
+      "total_tests": 101,
+      "tests_run": 5
+    },
+    "temporal_consistency": {
+      "total_tests": 33,
+      "tests_run": 5
+    }
+  }
+}

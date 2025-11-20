@@ -1,0 +1,232 @@
+[
+  {
+    "step": 1,
+    "command": "cd /tmp",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.092057466506958,
+    "error": null,
+    "context_size": 7,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:05.019291"
+  },
+  {
+    "step": 2,
+    "command": "mkdir test_dir",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.2959249019622803,
+    "error": null,
+    "context_size": 9,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:06.315412"
+  },
+  {
+    "step": 3,
+    "command": "cd test_dir",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 1.4678599834442139,
+    "error": null,
+    "context_size": 11,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:07.783462"
+  },
+  {
+    "step": 4,
+    "command": "touch file1.txt file2.txt file3.txt",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 1.5736558437347412,
+    "error": null,
+    "context_size": 13,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:09.357322"
+  },
+  {
+    "step": 5,
+    "command": "echo 'data1' > file1.txt",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 1.616037130355835,
+    "error": null,
+    "context_size": 15,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:10.973554"
+  },
+  {
+    "step": 6,
+    "command": "echo 'data2' > file2.txt",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 1.7042603492736816,
+    "error": null,
+    "context_size": 17,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:12.678033"
+  },
+  {
+    "step": 7,
+    "command": "echo 'data3' > file3.txt",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 1.8626911640167236,
+    "error": null,
+    "context_size": 19,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:14.540935"
+  },
+  {
+    "step": 8,
+    "command": "cat file1.txt",
+    "response": "data1\nroot@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 2.0320286750793457,
+    "error": null,
+    "context_size": 21,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:16.573174"
+  },
+  {
+    "step": 9,
+    "command": "cat file2.txt",
+    "response": "data2\nroot@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 2.23581862449646,
+    "error": null,
+    "context_size": 23,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:18.809198"
+  },
+  {
+    "step": 10,
+    "command": "cat file3.txt",
+    "response": "data3\nroot@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 2.392322301864624,
+    "error": null,
+    "context_size": 25,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:21.201730"
+  },
+  {
+    "step": 11,
+    "command": "ls -la",
+    "response": "total 20\ndrwxr-xr-x 2 root root 4096 Feb  6 14:31 .\ndrwxrwxrwt 9 root root 4096 Feb  6 14:29 ..\n-rw-r--r-- 1 root root    6 Feb  6 14:30 file1.txt\n-rw-r--r-- 1 root root    6 Feb  6 14:30 file2.txt\n-rw-r--r-- 1 root root    6 Feb  6 14:30 file3.txt\nroot@prod-web-nyc-01:/tmp/test_dir#",
+    "elapsed_time": 8.93136191368103,
+    "error": null,
+    "context_size": 27,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:30.133306"
+  },
+  {
+    "step": 12,
+    "command": "cd ..",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 2.748828887939453,
+    "error": null,
+    "context_size": 29,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:32.882343"
+  },
+  {
+    "step": 13,
+    "command": "ls -la test_dir",
+    "response": "total 12\ndrwxr-xr-x 2 root root 4096 Feb  6 14:31 .\ndrwxrwxrwt 9 root root 4096 Feb  6 14:29 ..\n-rw-r--r-- 1 root root    6 Feb  6 14:30 file1.txt\n-rw-r--r-- 1 root root    6 Feb  6 14:30 file2.txt\n-rw-r--r-- 1 root root    6 Feb  6 14:30 file3.txt\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 9.022650003433228,
+    "error": null,
+    "context_size": 31,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:41.905196"
+  },
+  {
+    "step": 14,
+    "command": "rm -rf test_dir",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 3.2398273944854736,
+    "error": null,
+    "context_size": 33,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:27:45.145246"
+  },
+  {
+    "step": 15,
+    "command": "ls -la",
+    "response": "total 24\ndrwxrwxrwt  9 root root 4096 Feb  6 14:31 .\ndrwxr-xr-x 20 root root 4096 Jan  5 11:43 ..\ndrwx------  2 root root 4096 Jan  5 12:03 .ICE-unix\ndrwx------  2 root root 4096 Jan  5 12:03 .X11-unix\ndrwx------  3 root root 4096 Feb  3 17:32 systemd-private-1d15ed87d3a7473c9d75f4f1b0b0e9f8-apache2.service-KxG0zN\ndrwx------  3 root root 4096 Feb  3 17:32 systemd-private-1d15ed87d3a7473c9d75f4f1b0b0e9f8-mariadb.service-oqzUYM\ndrwxr-xr-x  3 root root 4096 Jan 30 18:44 tmp.ZEo4NM4M9r\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 16.607070207595825,
+    "error": null,
+    "context_size": 35,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:01.752540"
+  },
+  {
+    "step": 16,
+    "command": "mkdir test_dir2",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 4.146722316741943,
+    "error": null,
+    "context_size": 37,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:05.899472"
+  },
+  {
+    "step": 17,
+    "command": "cd test_dir2",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir2#",
+    "elapsed_time": 4.226403474807739,
+    "error": null,
+    "context_size": 39,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:10.126102"
+  },
+  {
+    "step": 18,
+    "command": "for i in {1..10}; do touch file_$i.txt; done",
+    "response": "root@prod-web-nyc-01:/tmp/test_dir2#",
+    "elapsed_time": 4.831860303878784,
+    "error": null,
+    "context_size": 41,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:14.958172"
+  },
+  {
+    "step": 19,
+    "command": "ls -la",
+    "response": "total 8\ndrwxr-xr-x 2 root root 4096 Feb  6 14:33 .\ndrwxrwxrwt 9 root root 4096 Feb  6 14:32 ..\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_1.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_10.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_2.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_3.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_4.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_5.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_6.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_7.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_8.txt\n-rw-r--r-- 1 root root    0 Feb  6 14:33 file_9.txt\nroot@prod-web-nyc-01:/tmp/test_dir2#",
+    "elapsed_time": 21.529343605041504,
+    "error": null,
+    "context_size": 43,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:36.487722"
+  },
+  {
+    "step": 20,
+    "command": "cd ..",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 5.864562034606934,
+    "error": null,
+    "context_size": 45,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:42.352490"
+  },
+  {
+    "step": 21,
+    "command": "rm -rf test_dir2",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 5.963450193405151,
+    "error": null,
+    "context_size": 47,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:48.316140"
+  },
+  {
+    "step": 22,
+    "command": "echo 'What was in file1.txt?'",
+    "response": "What was in file1.txt?\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 6.979285001754761,
+    "error": null,
+    "context_size": 49,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:28:55.295649"
+  },
+  {
+    "step": 23,
+    "command": "ls /tmp/test_dir",
+    "response": "ls: cannot access '/tmp/test_dir': No such file or directory\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 8.007665872573853,
+    "error": null,
+    "context_size": 51,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:29:03.303503"
+  }
+]

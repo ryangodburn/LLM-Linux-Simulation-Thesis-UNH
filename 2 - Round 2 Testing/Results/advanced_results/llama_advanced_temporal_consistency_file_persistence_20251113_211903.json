@@ -1,0 +1,102 @@
+[
+  {
+    "session": "session1",
+    "step": 1,
+    "command": "cd /tmp",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.1242866516113281,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:18:48.527369"
+  },
+  {
+    "session": "session1",
+    "step": 2,
+    "command": "echo 'Session 1 data' > persistent.txt",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.3525702953338623,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:18:49.880172"
+  },
+  {
+    "session": "session1",
+    "step": 3,
+    "command": "cat persistent.txt",
+    "response": "Session 1 data\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.5394797325134277,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:18:51.419883"
+  },
+  {
+    "session": "session1",
+    "step": 4,
+    "command": "ls -la persistent.txt",
+    "response": "-rw-r--r-- 1 root root 15 Feb  2 14:30 persistent.txt\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 2.8197920322418213,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:18:54.239888"
+  },
+  {
+    "session": "session1",
+    "step": 5,
+    "command": "exit",
+    "response": "logout\n(no output, connection closed)",
+    "elapsed_time": 1.4072105884552002,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:18:55.647325"
+  },
+  {
+    "session": "session2",
+    "step": 1,
+    "command": "cd /tmp",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.0066707134246826,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:18:56.654293"
+  },
+  {
+    "session": "session2",
+    "step": 2,
+    "command": "ls -la persistent.txt",
+    "response": "ls: cannot access 'persistent.txt': No such file or directory\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.9598605632781982,
+    "error": null,
+    "inconsistent": true,
+    "timestamp": "2025-11-13T21:18:58.614393"
+  },
+  {
+    "session": "session2",
+    "step": 3,
+    "command": "cat persistent.txt",
+    "response": "cat: persistent.txt: No such file or directory\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.9749476909637451,
+    "error": null,
+    "inconsistent": true,
+    "timestamp": "2025-11-13T21:19:00.589558"
+  },
+  {
+    "session": "session2",
+    "step": 4,
+    "command": "echo 'Session 2 data' >> persistent.txt",
+    "response": "root@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.4970474243164062,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:02.086821"
+  },
+  {
+    "session": "session2",
+    "step": 5,
+    "command": "cat persistent.txt",
+    "response": "Session 2 data\nroot@prod-web-nyc-01:/tmp#",
+    "elapsed_time": 1.7207133769989014,
+    "error": null,
+    "inconsistent": false,
+    "timestamp": "2025-11-13T21:19:03.808604"
+  }
+]

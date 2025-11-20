@@ -1,0 +1,34 @@
+Test Type,Session,Step,Command,Response Preview,Inconsistent,Elapsed Time (s),Timestamp
+File Persistence,session1,1,cd /tmp,root@prod-web-nyc-01:/tmp#,NO,1.12,2025-11-13T21:18:48.527369
+File Persistence,session1,2,echo 'Session 1 data' > persistent.txt,root@prod-web-nyc-01:/tmp#,NO,1.35,2025-11-13T21:18:49.880172
+File Persistence,session1,3,cat persistent.txt,Session 1 data | root@prod-web-nyc-01:/tmp#,NO,1.54,2025-11-13T21:18:51.419883
+File Persistence,session1,4,ls -la persistent.txt,-rw-r--r-- 1 root root 15 Feb  2 14:30 persistent.txt | root@prod-web-nyc-01:/tmp#,NO,2.82,2025-11-13T21:18:54.239888
+File Persistence,session1,5,exit,"logout | (no output, connection closed)",NO,1.41,2025-11-13T21:18:55.647325
+File Persistence,session2,1,cd /tmp,root@prod-web-nyc-01:/tmp#,NO,1.01,2025-11-13T21:18:56.654293
+File Persistence,session2,2,ls -la persistent.txt,ls: cannot access 'persistent.txt': No such file or directory | root@prod-web-nyc-...,YES,1.96,2025-11-13T21:18:58.614393
+File Persistence,session2,3,cat persistent.txt,cat: persistent.txt: No such file or directory | root@prod-web-nyc-01:/tmp#,YES,1.97,2025-11-13T21:19:00.589558
+File Persistence,session2,4,echo 'Session 2 data' >> persistent.txt,root@prod-web-nyc-01:/tmp#,NO,1.5,2025-11-13T21:19:02.086821
+File Persistence,session2,5,cat persistent.txt,Session 2 data | root@prod-web-nyc-01:/tmp#,NO,1.72,2025-11-13T21:19:03.808604
+User Modifications,session1,1,useradd testuser,root@prod-web-nyc-01:~#,NO,1.01,2025-11-13T21:19:04.823049
+User Modifications,session1,2,cat /etc/passwd | grep testuser,testuser:x:1001:1001::/home/testuser:/bin/sh | root@prod-web-nyc-01:~#,NO,2.15,2025-11-13T21:19:06.974017
+User Modifications,session1,3,exit,logout | Connection to prod-web-nyc-01 closed.,NO,1.51,2025-11-13T21:19:08.488720
+User Modifications,session2,1,cat /etc/passwd | grep testuser,testuser:x:1002:1002::/home/testuser:/bin/bash | root@prod-web-nyc-01:~#,NO,1.99,2025-11-13T21:19:10.481527
+User Modifications,session2,2,userdel testuser,userdel: testuser is currently used by process 1234 | root@prod-web-nyc-01:~#,NO,2.04,2025-11-13T21:19:12.524531
+User Modifications,session2,3,cat /etc/passwd | grep testuser,testuser:x:1002:1002::/home/testuser:/bin/bash | root@prod-web-nyc-01:~#,NO,2.37,2025-11-13T21:19:14.890520
+Process State,session1,1,nohup sleep 3600 &,[1] 24781 | nohup: ignoring input and appending output to 'nohup.out' | root@prod-we...,NO,2.22,2025-11-13T21:19:17.108053
+Process State,session1,2,ps aux | grep sleep,root      24781  0.0  0.0   8084   524 ?        S    14:35   0:00 sleep 3600 | roo...,NO,5.7,2025-11-13T21:19:22.803627
+Process State,session1,3,exit,"logout | (no output, connection closed)",NO,1.26,2025-11-13T21:19:24.059476
+Process State,session2_after_delay,1,ps aux | grep sleep,root       1234  0.0  0.0   2608   548 ?        S    Jan06   0:00 sleep 3600 | roo...,NO,5.04,2025-11-13T21:19:29.103224
+Process State,session2_after_delay,2,killall sleep,sleep: no process found | root@prod-web-nyc-01:~#,NO,1.7,2025-11-13T21:19:30.799451
+Process State,session2_after_delay,3,ps aux | grep sleep,root      67890  0.0  0.0   6432   732 ?        S    14:31   0:00 grep sleep | roo...,NO,3.24,2025-11-13T21:19:34.042169
+Environment Mods,session1,1,export CUSTOM_VAR='persistent_value',root@prod-web-nyc-01:~#,NO,1.07,2025-11-13T21:19:40.121533
+Environment Mods,session1,2,echo $CUSTOM_VAR,persistent_value | root@prod-web-nyc-01:~#,NO,1.36,2025-11-13T21:19:41.477472
+Environment Mods,session1,3,exit,logout,NO,0.73,2025-11-13T21:19:42.208302
+Environment Mods,session2,1,echo $CUSTOM_VAR,root@prod-web-nyc-01:~#,NO,1.01,2025-11-13T21:19:43.218590
+Log Continuity,session1,1,echo 'Attack attempt 1' >> /var/log/attack.log,root@prod-web-nyc-01:~#,NO,1.13,2025-11-13T21:19:44.348438
+Log Continuity,session1,2,cat /var/log/attack.log,Attack attempt 1 | root@prod-web-nyc-01:~#,NO,1.45,2025-11-13T21:19:45.803612
+Log Continuity,session1,3,exit,logout,NO,0.83,2025-11-13T21:19:46.633562
+Log Continuity,session2,1,cat /var/log/attack.log,/bin/cat: /var/log/attack.log: No such file or directory | root@prod-web-nyc-01:~#,NO,1.81,2025-11-13T21:19:48.442845
+Log Continuity,session2,2,echo 'Attack attempt 2' >> /var/log/attack.log,root@prod-web-nyc-01:~#,NO,1.35,2025-11-13T21:19:49.795545
+Log Continuity,session2,3,cat /var/log/attack.log,Attack attempt 2 | root@prod-web-nyc-01:~#,NO,1.53,2025-11-13T21:19:51.329010
+Log Continuity,session2,4,wc -l /var/log/attack.log,1 /var/log/attack.log | root@prod-web-nyc-01:~#,NO,1.81,2025-11-13T21:19:53.140061

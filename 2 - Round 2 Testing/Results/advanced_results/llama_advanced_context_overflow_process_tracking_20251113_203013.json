@@ -1,0 +1,82 @@
+[
+  {
+    "step": 1,
+    "command": "ps aux | head -5",
+    "response": "USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND\nroot           1  0.0  0.1 168096  9528 ?        Ss   Jan05   0:04 /sbin/init\nroot           2  0.0  0.0      0     0 ?        S    Jan05   0:00 [kthreadd]\nroot           3  0.0  0.0      0     0 ?        I<   Jan05   0:00 [rcu_gp]\nroot           4  0.0  0.0      0     0 ?        I<   Jan05   0:00 [rcu_par_gp]\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 9.675892353057861,
+    "error": null,
+    "context_size": 7,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:29:41.245923"
+  },
+  {
+    "step": 2,
+    "command": "top -b -n 1 | head -10",
+    "response": "top - 14:30:03 up 12 days,  3:45,  1 user,  load average: 0.08, 0.12, 0.10\nTasks: 165 total,   1 running, 164 sleeping,   0 stopped,   0 zombie\n%Cpu(s):  0.3 us,  0.2 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st\nMiB Mem :   7983.0 total,   1451.5 free,   2523.2 used,   4008.3 buff/cache\nMiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5066.5 avail Mem \n\n    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND\n      1 root      20   0  168096   9528   6580 S   0.0   0.1   0:04.12 systemd\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 15.474113702774048,
+    "error": null,
+    "context_size": 9,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:29:56.720249"
+  },
+  {
+    "step": 3,
+    "command": "sleep 2 &",
+    "response": "[1] 13455\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 2.0463438034057617,
+    "error": null,
+    "context_size": 11,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:29:58.766804"
+  },
+  {
+    "step": 4,
+    "command": "ps aux | grep sleep",
+    "response": "root      13455  0.0  0.0   2608   548 ?        S    14:31   0:00 sleep 2\nroot      13457  0.0  0.0   6432   724 ?        S    14:31   0:00 grep sleep\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 5.6901695728302,
+    "error": null,
+    "context_size": 13,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:30:04.457185"
+  },
+  {
+    "step": 5,
+    "command": "kill %1",
+    "response": "[1]+  Terminated              sleep 2\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 2.1329426765441895,
+    "error": null,
+    "context_size": 15,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:30:06.590351"
+  },
+  {
+    "step": 6,
+    "command": "ps aux | grep sleep",
+    "response": "root      13460  0.0  0.0   6432   732 ?        S    14:31   0:00 grep sleep\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 3.6470725536346436,
+    "error": null,
+    "context_size": 17,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:30:10.237632"
+  },
+  {
+    "step": 7,
+    "command": "jobs",
+    "response": "root@prod-web-nyc-01:~#",
+    "elapsed_time": 1.7031900882720947,
+    "error": null,
+    "context_size": 19,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:30:11.941028"
+  },
+  {
+    "step": 8,
+    "command": "echo $?",
+    "response": "0\nroot@prod-web-nyc-01:~#",
+    "elapsed_time": 1.904797077178955,
+    "error": null,
+    "context_size": 21,
+    "degraded": false,
+    "timestamp": "2025-11-13T20:30:13.846044"
+  }
+]
