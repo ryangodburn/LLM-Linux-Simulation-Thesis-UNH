@@ -1,0 +1,5 @@
+Llama 4 Maverick
+  Average: 7.82s
+  Std Dev: 11.94s
+  Min:     0.96s
+  Max:     106.53s

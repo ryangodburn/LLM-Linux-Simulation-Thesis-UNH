@@ -1,0 +1,5 @@
+Claude Sonnet 4.5
+  Average: 7.41s
+  Std Dev: 3.98s
+  Min:     2.93s
+  Max:     23.56s

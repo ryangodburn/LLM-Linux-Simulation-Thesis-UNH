@@ -1,0 +1,5 @@
+GPT-5
+  Average: 35.26s
+  Std Dev: 31.97s
+  Min:     4.92s
+  Max:     152.19s

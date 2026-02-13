@@ -1,0 +1,5 @@
+DeepSeek R1
+  Average: 35.73s
+  Std Dev: 140.53s
+  Min:     3.48s
+  Max:     889.42s

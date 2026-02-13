@@ -1,0 +1,5 @@
+Gemini 2.5 Pro
+  Average: 10.18s
+  Std Dev: 8.38s
+  Min:     1.58s
+  Max:     47.52s
