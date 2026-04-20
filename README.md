@@ -93,22 +93,6 @@ This thesis investigates whether Large Language Models (LLMs) can bridge that ga
 4. **Identification of the safety-vs-deception tension** — showing that AI safety training can directly undermine honeypot effectiveness.
 5. **Practical mitigation recommendation:** context pruning with summarization to address the latency-scaling fingerprinting vulnerability.
 
-## Repository Structure
-
-```
-.
-├── paper/              # Full thesis PDF and LaTeX source
-├── scripts/            # Python evaluation & scoring scripts
-├── prompts/            # System prompts and few-shot examples
-├── test-commands/      # The 27-command test set
-├── results/            # Raw output logs and scoring data (JSON/CSV)
-│   ├── round1/         # 27-command comparative evaluation
-│   ├── validation/     # N=5 latency validation results
-│   └── round2/         # Advanced adversarial testing (Llama-4)
-├── figures/            # Plots and diagrams from the paper
-└── README.md
-```
-
 ## Limitations
 
 - Controlled lab conditions — not yet validated against real-world attackers on a live network.
