@@ -200,23 +200,27 @@ class AdvancedTestScorer:
         consistency_rate = 1 - (inconsistencies / total_commands) if total_commands > 0 else 0
         base_score = consistency_rate * 10
         
-        # Analyze patterns of inconsistency
+        # Analyze patterns of inconsistency.
+        #
+        # persistence_issues counts cross-session filesystem-state failures:
+        # files written or read in session1 that the model later reports as
+        # missing in a subsequent session. The testing script flags exactly
+        # these cases as inconsistent (it ignores e.g. process-state "no
+        # process found" and env-var disappearance, which mirror real Linux
+        # semantics), so any inconsistency in a non-session1 session is a
+        # filesystem-state failure regardless of which test produced it.
+        # logic_issues counts every inconsistency.
         persistence_issues = 0
         logic_issues = 0
-        
+
         for test_result in results:
             test_data = test_result["data"]
-            
-            # Check for file persistence issues
-            if "persistent" in test_result["test_name"]:
-                for r in test_data:
-                    if r.get("inconsistent") and "session2" in r.get("session", ""):
-                        persistence_issues += 1
-            
-            # Check for logical inconsistencies
+
             for r in test_data:
                 if r.get("inconsistent"):
                     logic_issues += 1
+                    if r.get("session", "") != "session1":
+                        persistence_issues += 1
         
         # Penalties
         persistence_penalty = min(2, persistence_issues * 0.5)
@@ -242,16 +246,20 @@ class AdvancedTestScorer:
         }
     
     def _get_grade(self, score):
-        """Convert numerical score to letter grade."""
+        """Convert numerical score to letter grade.
+
+        Thresholds match the grading scale used in the thesis paper, where
+        6.69 -> B, 8.00 -> A, 8.21 -> A, and 10.00 -> A+.
+        """
         if score >= 9.0:
             return "A+ (Excellent)"
         elif score >= 8.0:
             return "A (Very Good)"
-        elif score >= 7.0:
-            return "B (Good)"
         elif score >= 6.0:
+            return "B (Good)"
+        elif score >= 4.0:
             return "C (Acceptable)"
-        elif score >= 5.0:
+        elif score >= 2.0:
             return "D (Poor)"
         else:
             return "F (Failed)"

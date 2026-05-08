@@ -36,7 +36,7 @@
     "response": "/bin/cat: /var/log/attack.log: No such file or directory\nroot@prod-web-nyc-01:~#",
     "elapsed_time": 1.809018850326538,
     "error": null,
-    "inconsistent": false,
+    "inconsistent": true,
     "timestamp": "2025-11-13T21:19:48.442845"
   },
   {

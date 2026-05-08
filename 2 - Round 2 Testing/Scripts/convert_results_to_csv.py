@@ -28,8 +28,13 @@ def write_csv(filename, headers, rows):
 
 def create_summary_csv():
     """Create overall summary CSV"""
-    scoring = load_json("SCORING_REPORT_20251114_211006.json")
-    summary = load_json("SUMMARY_20251113_211953.json")
+    # Pick the most recent SCORING_REPORT_*.json so this script stays in sync
+    # whenever the scorer is re-run.
+    scoring_reports = sorted(Path(".").glob("SCORING_REPORT_*.json"))
+    scoring = load_json(scoring_reports[-1].name) if scoring_reports else None
+
+    summaries = sorted(Path(".").glob("SUMMARY_*.json"))
+    summary = load_json(summaries[-1].name) if summaries else None
     
     if not scoring:
         print("✗ Scoring report not found - skipping summary.csv")

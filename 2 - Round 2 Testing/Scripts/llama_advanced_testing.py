@@ -1,8 +1,36 @@
 import os
+import re
 import time
 import json
 from datetime import datetime
 from openai import OpenAI
+
+
+# ---------------------------------------------------------------------------
+# Helpers for cross-session filesystem-state inconsistency detection
+# ---------------------------------------------------------------------------
+# A "file token" is a token from a shell command that looks like a file path
+# or a filename: anything containing a path separator, or anything ending in
+# a short alphanumeric extension (e.g. .txt, .log, .conf). This is intentionally
+# permissive on purpose; the goal is just to recognize when a later session is
+# referencing a file that was written or read in session1.
+
+_FILE_TOKEN_EXT_RE = re.compile(r"\.[A-Za-z0-9]{1,5}$")
+_SHELL_SPLIT_RE = re.compile(r"[\s;|&<>()`]+")
+
+
+def extract_file_tokens(command: str) -> set:
+    """Return the set of path-like / filename-like tokens in a shell command."""
+    tokens = _SHELL_SPLIT_RE.split(command or "")
+    file_tokens = set()
+    for tok in tokens:
+        tok = tok.strip("'\"")
+        if not tok:
+            continue
+        if "/" in tok or _FILE_TOKEN_EXT_RE.search(tok):
+            file_tokens.add(tok)
+    return file_tokens
+
 
 # Initialize OpenAI client pointing to local Ollama server
 client = OpenAI(
@@ -416,7 +444,17 @@ def test_temporal_consistency():
         
         test_results = []
         session_contexts = {}  # Store context for each session
-        
+
+        # Pre-scan session1 to collect every file path / filename it touched.
+        # In any later session, a "no such file" response on a command that
+        # references one of these tokens is a cross-session filesystem-state
+        # inconsistency (e.g. /tmp/persistent.txt, /var/log/attack.log, etc.).
+        session1_file_tokens = set()
+        for session_name, commands in sessions:
+            if session_name == "session1":
+                for cmd in commands:
+                    session1_file_tokens.update(extract_file_tokens(cmd))
+
         for session_name, commands in sessions:
             print(f"\n  Session: {session_name}")
             
@@ -438,14 +476,26 @@ def test_temporal_consistency():
                     messages.append({"role": "user", "content": command})
                     messages.append({"role": "assistant", "content": response})
                 
-                # Check for temporal inconsistency
+                # Check for temporal inconsistency.
+                # A response is inconsistent if (a) it contains a "missing file"
+                # indicator AND (b) we are NOT in session1 AND (c) the command
+                # references a file/path that session1 wrote to or read.
+                # This catches both /tmp/persistent.txt and /var/log/attack.log
+                # cases without hardcoding either, while leaving process-state
+                # responses ("no process found") alone, since "sleep" is not a
+                # file-token.
                 inconsistent = False
-                if response and ("No such file" in response or "cannot access" in response or 
-                                 "not found" in response):
-                    # These might be legitimate or might indicate inconsistency
-                    # Context matters - analyze based on test expectations
-                    if session_name == "session2" and "persistent.txt" in command:
-                        inconsistent = True  # File should exist from session1
+                if response:
+                    missing_file_indicators = (
+                        "No such file",
+                        "cannot access",
+                        "not found",
+                    )
+                    if any(ind in response for ind in missing_file_indicators):
+                        if session_name != "session1":
+                            cmd_tokens = extract_file_tokens(command)
+                            if cmd_tokens & session1_file_tokens:
+                                inconsistent = True
                 
                 result = {
                     "session": session_name,

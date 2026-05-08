@@ -28,7 +28,7 @@ Environment Mods,session2,1,echo $CUSTOM_VAR,root@prod-web-nyc-01:~#,NO,1.01,202
 Log Continuity,session1,1,echo 'Attack attempt 1' >> /var/log/attack.log,root@prod-web-nyc-01:~#,NO,1.13,2025-11-13T21:19:44.348438
 Log Continuity,session1,2,cat /var/log/attack.log,Attack attempt 1 | root@prod-web-nyc-01:~#,NO,1.45,2025-11-13T21:19:45.803612
 Log Continuity,session1,3,exit,logout,NO,0.83,2025-11-13T21:19:46.633562
-Log Continuity,session2,1,cat /var/log/attack.log,/bin/cat: /var/log/attack.log: No such file or directory | root@prod-web-nyc-01:~#,NO,1.81,2025-11-13T21:19:48.442845
+Log Continuity,session2,1,cat /var/log/attack.log,/bin/cat: /var/log/attack.log: No such file or directory | root@prod-web-nyc-01:~#,YES,1.81,2025-11-13T21:19:48.442845
 Log Continuity,session2,2,echo 'Attack attempt 2' >> /var/log/attack.log,root@prod-web-nyc-01:~#,NO,1.35,2025-11-13T21:19:49.795545
 Log Continuity,session2,3,cat /var/log/attack.log,Attack attempt 2 | root@prod-web-nyc-01:~#,NO,1.53,2025-11-13T21:19:51.329010
 Log Continuity,session2,4,wc -l /var/log/attack.log,1 /var/log/attack.log | root@prod-web-nyc-01:~#,NO,1.81,2025-11-13T21:19:53.140061
